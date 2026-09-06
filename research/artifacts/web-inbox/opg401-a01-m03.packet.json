@@ -13,7 +13,7 @@
   "graph_id":"graph:opg401-initial-v1",
   "obligation_id":"obligation:opg401-root",
   "generator":{"principal":"chatgpt-web-github","model_label":"GPT-6 Astra Pro","model_fingerprint_status":"unverified"},
-  "transport":{"branch":"web/attempt-opg401-a01-m03-weighted-core","issue_number":4,"issue_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4","pull_request_number":null,"pull_request_url":null},
+  "transport":{"branch":"web/attempt-opg401-a01-m03-weighted-core","issue_number":4,"issue_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4","pull_request_number":17,"pull_request_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/17"},
   "objective":"Derive a three-connected weighted core and a thirteen-type unavoidable face family using edge tightening and an overlapping-pentagon reduction.",
   "candidate_artifacts":[{"candidate_id":"candidate:opg401-a01-m03-weighted-core","kind":"proof","locator":"research/artifacts/candidates/opg401-a01-m03-weighted-core.md","sha256":"93bca0d2fb06a766a209d53ac59f71edf7b8c18f0ae5065cb824b6d92944d5ac"}],
   "atomic_claims":[
