@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762563, "node_id": "R_kgDOUP0SQw", "default_branch": "main"},
+  "problem_id": "problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256": "76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256": "d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision": "ae202fd206b64b875d0c2ea75e272d0761469af1",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg401-a01",
+  "route_id": "route:degree-two-extension-criterion-v1",
+  "graph_id": "graph:opg401-initial-v1",
+  "obligation_id": "obligation:opg401-z20-extension",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {"branch": "web/attempt-opg401-a01-f01-extension-bijection", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": 14, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/14"},
+  "objective": "Give an explicit bijection between preserving graph-coloring extensions and local available colors, prove placeholder invariance, and specify exact witnesses against eight incorrect encodings.",
+  "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-f01-extension-bijection", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-f01-extension-bijection.md", "sha256": "2963b681e2f49202b05a135f5651bb4ab4438aa8859a959308a64ece028c2d56"}],
+  "atomic_claims": [
+    {"claim_id": "claim:opg401-f01-extension-bijection", "text": "For a finite simple graph and a valid coloring away from v, evaluation at v bijects preserving full extensions with the common allowed-color set of the neighbors; explicit insertion is its inverse.", "status": "candidate"},
+    {"claim_id": "claim:opg401-f01-exact-extension-count", "text": "Preserving-extension cardinality equals available-color cardinality; for two distinct neighbors it is max(0,7-delta), with a separate twenty-choice degree-zero case.", "status": "candidate"},
+    {"claim_id": "claim:opg401-f01-placeholder-invariance", "text": "Changing only the old placeholder at the uncolored vertex changes neither the preserving-extension set nor the available-color set.", "status": "candidate"}
+  ],
+  "assumptions": ["The edge relation is symmetric and irreflexive on a finite vertex set.", "The old coloring is valid on all edges whose endpoints are different from the uncolored vertex.", "Agreement with old colors is imposed exactly off the uncolored vertex.", "The degree-two specialization has two distinct vertices as neighbors, although their colors may coincide."],
+  "risks": ["This is a mathematical encoding bridge and audit candidate, not compiled Lean source or a verifier receipt.", "Mutation witnesses are hand-derived truth requirements, not claimed program test output.", "The optional arbitrary-positive-degree count depends on c08; the base bijection does not.", "No local result or semantic audit alone closes the root obligation."],
+  "open_obligations": ["obligation:opg401-z20-extension", "obligation:opg401-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "problem-library/records/canonical-problems.jsonl", "revision": "ae202fd206b64b875d0c2ea75e272d0761469af1", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/records/obligation-graphs.jsonl", "revision": "ae202fd206b64b875d0c2ea75e272d0761469af1", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/records/failed-routes.jsonl", "revision": "ae202fd206b64b875d0c2ea75e272d0761469af1", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c01-local-extension.md", "revision": "ae202fd206b64b875d0c2ea75e272d0761469af1", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c07-formalization-plan.md", "revision": "ae202fd206b64b875d0c2ea75e272d0761469af1", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c08-common-neighborhoods.md", "revision": "ae202fd206b64b875d0c2ea75e272d0761469af1", "relation": "prior_art"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T09:03:38.959979+00:00"
+}
