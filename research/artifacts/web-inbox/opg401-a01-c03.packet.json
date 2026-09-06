@@ -13,7 +13,7 @@
   "graph_id": "graph:opg401-initial-v1",
   "obligation_id": "obligation:opg401-z20-extension",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg401-a01-c03-path-sumsets", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg401-a01-c03-path-sumsets", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": 7, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/7"},
   "objective": "Derive exact endpoint feasibility and counts for (20,7)-colored degree-two paths, and extract valid long-thread and four-cycle reductions.",
   "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c03-path-sumsets", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c03-path-sumsets.md", "sha256": "d12e9eb2eb89b190c050e3485b5a211ab3f40d2de7b917a1c671ae6d3bfd055d"}],
   "atomic_claims": [
