@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762563, "node_id": "R_kgDOUP0SQw", "default_branch": "main"},
+  "problem_id": "problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256": "76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256": "d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision": "d0f1000ba8b4378d91a1946c417ac9947360af2e",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg401-a01",
+  "route_id": "route:degree-two-extension-criterion-v1",
+  "graph_id": "graph:opg401-initial-v1",
+  "obligation_id": "obligation:opg401-z20-extension",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {"branch": "web/attempt-opg401-a01-g01-planar-k23", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "objective": "Derive class-level K2,3 reducibility using the degree-two extension criterion, a planar attachment bound, and separate choices of whole-component color rotations.",
+  "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-g01-planar-k23", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-g01-planar-k23.md", "sha256": "f352ab0a3e464b448bb1d57c8770f40da96eb2c21b95a7ff0015f781565ae16e"}],
+  "atomic_claims": [
+    {"claim_id": "claim:opg401-g01-planar-k23", "text": "A finite simple triangle-free planar subcubic graph containing a K2,3 configuration is (20,7)-colorable exactly when its five-vertex deletion is; every deletion coloring extends after whole-component rotations.", "status": "candidate"},
+    {"claim_id": "claim:opg401-g01-two-attachments", "text": "Each outside connected component attaches to at most two middle vertices, since three attachments would produce a K3,3 minor.", "status": "candidate"},
+    {"claim_id": "claim:opg401-g01-two-color-centering", "text": "Any family of at most two colors in Z20 can be translated so that each color is at circular distance at most five from zero.", "status": "candidate"}
+  ],
+  "assumptions": ["The graph is finite, simple, triangle-free, planar and of maximum degree at most three.", "The five vertices of the K2,3 configuration are distinct.", "Whole connected components of the deletion may be rotated; old boundary colors are not required to remain fixed."],
+  "risks": ["This excludes one configuration from a hypothetical vertex-minimal obstruction, not all such graphs.", "The unchanged-boundary version fails on K2,3 with three pendant outside vertices colored 0,7,14.", "The planar attachment argument and the one-outside-neighbor condition must be retained.", "No mathematical solver, enumeration, compiler or verifier receipt is claimed."],
+  "open_obligations": ["obligation:opg401-z20-extension", "obligation:opg401-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "problem-library/records/canonical-problems.jsonl", "revision": "d0f1000ba8b4378d91a1946c417ac9947360af2e", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/records/obligation-graphs.jsonl", "revision": "d0f1000ba8b4378d91a1946c417ac9947360af2e", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/records/failed-routes.jsonl", "revision": "d0f1000ba8b4378d91a1946c417ac9947360af2e", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c01-local-extension.md", "revision": "d0f1000ba8b4378d91a1946c417ac9947360af2e", "relation": "prior_art"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T08:54:21.785411+00:00"
+}
