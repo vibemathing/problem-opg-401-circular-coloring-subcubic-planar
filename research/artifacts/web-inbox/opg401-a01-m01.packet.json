@@ -1,0 +1,43 @@
+{
+  "schema_version":"1.1.0",
+  "channel":"chatgpt-web-github-issue-pr-writer",
+  "repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity":{"binding_state":"verified","database_id":1358762563,"node_id":"R_kgDOUP0SQw","default_branch":"main"},
+  "problem_id":"problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256":"76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256":"d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision":"6d62002c3d9a88823fa0dd76f99ae16f5aa32b24",
+  "importer_policy_sha256":"a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id":"attempt:web-20260906-opg401-a01",
+  "route_id":"route:degree-two-extension-criterion-v1",
+  "graph_id":"graph:opg401-initial-v1",
+  "obligation_id":"obligation:opg401-root",
+  "generator":{"principal":"chatgpt-web-github","model_label":"GPT-6 Astra Pro","model_fingerprint_status":"unverified"},
+  "transport":{"branch":"web/attempt-opg401-a01-m01-critical-structure","issue_number":4,"issue_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4","pull_request_number":15,"pull_request_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/15"},
+  "objective":"Organize the local candidates into a minimal-obstruction system, classify residual two-edge cuts, and derive the actual finite unavoidable face family for the root.",
+  "candidate_artifacts":[{"candidate_id":"candidate:opg401-a01-m01-critical-structure","kind":"proof","locator":"research/artifacts/candidates/opg401-a01-m01-critical-structure.md","sha256":"e937e65486833c676b7f8403e590e00e42638ba351dc23593c77ff648857a2a6"}],
+  "atomic_claims":[
+    {"claim_id":"claim:opg401-m01-folds","text":"A minimum-order obstruction is 2-connected, has no dominated vertex, no degree-two vertex on a four-cycle, and no K2,3.","status":"candidate"},
+    {"claim_id":"claim:opg401-m01-thread-structure","text":"Length-three threads form a matching in the suppressed cubic multigraph; a degree-three vertex has at most two degree-two neighbors, and two force their far ends adjacent.","status":"candidate"},
+    {"claim_id":"claim:opg401-m01-two-edge-gluing","text":"Two fixed side colorings across a two-edge cut glue by a whole-side dihedral transform exactly when their endpoint circular distances differ by at most six.","status":"candidate"},
+    {"claim_id":"claim:opg401-m01-cut-restriction","text":"A nontrivial two-edge bond in a minimum-order obstruction has internal endpoint graph distances one and two on its two sides.","status":"candidate"},
+    {"claim_id":"claim:opg401-m01-unavoidable-faces","text":"The exact identity sum_f(6-k(f))=12 forces a face with three, four or five degree-three vertices; the three-branch case is precisely a five-cycle with two degree-two vertices.","status":"candidate"},
+    {"claim_id":"claim:opg401-m01-closure-barrier","text":"A colorable pentagonal prism satisfies the older local exclusions and Euler accounting, so those exclusions alone do not form a closed contradiction.","status":"candidate"}
+  ],
+  "assumptions":["The graph belongs to the frozen finite simple triangle-free planar subcubic class.","Minimal-obstruction assertions assume minimum vertex order among non-(20,7)-colorable members.","Previously generated local results are used with their stated proofs and quantifiers, not as admitted Evidence."],
+  "risks":["The unavoidable family still contains unresolved all-cubic four- and five-faces.","No mathematical enumeration, solver, compiler or verifier receipt is claimed.","A witness against a structural shortcut is not a counterexample to the ProblemContract."],
+  "open_obligations":["obligation:opg401-z20-extension","obligation:opg401-root"],
+  "failed_route_proposal":null,
+  "source_refs":[
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"problem-library/records/canonical-problems.jsonl","revision":"6d62002c3d9a88823fa0dd76f99ae16f5aa32b24","relation":"exact"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/records/obligation-graphs.jsonl","revision":"6d62002c3d9a88823fa0dd76f99ae16f5aa32b24","relation":"exact"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/records/failed-routes.jsonl","revision":"6d62002c3d9a88823fa0dd76f99ae16f5aa32b24","relation":"prior_art"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-c01-local-extension.md","revision":"6d62002c3d9a88823fa0dd76f99ae16f5aa32b24","relation":"prior_art"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-c03-path-sumsets.md","revision":"6d62002c3d9a88823fa0dd76f99ae16f5aa32b24","relation":"prior_art"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-c04-recoloring.md","revision":"6d62002c3d9a88823fa0dd76f99ae16f5aa32b24","relation":"prior_art"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-g01-planar-k23.md","revision":"6d62002c3d9a88823fa0dd76f99ae16f5aa32b24","relation":"prior_art"}
+  ],
+  "requested_verification":["kernel_check","axiom_escape_audit","statement_faithfulness"],
+  "verdict":"candidate_only",
+  "created_at":"2026-09-06T12:31:28.929533+00:00"
+}
