@@ -13,7 +13,7 @@
   "graph_id": "graph:opg401-initial-v1",
   "obligation_id": "obligation:opg401-z20-extension",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg401-a01-c02-neighbor-quotient", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg401-a01-c02-neighbor-quotient", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": 6, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/6"},
   "objective": "Characterize exactly when identifying the two neighbors of a degree-two vertex preserves the triangle-free planar subcubic class, and derive a conditional reducibility consequence of the Z20 extension criterion.",
   "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c02-neighbor-quotient", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c02-neighbor-quotient.md", "sha256": "345489c3a1813b5e3698067c1bd1891f1a55be1716a006a171eb131d01e67f93"}],
   "atomic_claims": [
