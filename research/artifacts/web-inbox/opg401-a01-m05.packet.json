@@ -4,7 +4,7 @@
 "problem_id":"problem:opg-401-circular-coloring-subcubic-planar","problem_contract_sha256":"76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6","harness_snapshot_sha256":"d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f","base_revision":"88a42d5c35568268e15cda980a81919432d753dd","importer_policy_sha256":"a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
 "attempt_id":"attempt:web-20260906-opg401-a01","route_id":"route:degree-two-extension-criterion-v1","graph_id":"graph:opg401-initial-v1","obligation_id":"obligation:opg401-root",
 "generator":{"principal":"chatgpt-web-github","model_label":"GPT-6 Astra Pro","model_fingerprint_status":"unverified"},
-"transport":{"branch":"web/attempt-opg401-a01-m05-pentagon-clusters","issue_number":4,"issue_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4","pull_request_number":null,"pull_request_url":null},
+"transport":{"branch":"web/attempt-opg401-a01-m05-pentagon-clusters","issue_number":4,"issue_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4","pull_request_number":19,"pull_request_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/19"},
 "objective":"Connect 122 faces to cubic pentagon carriers, eliminate double-ear clusters, and isolate the remaining connected-boundary charge problem.",
 "candidate_artifacts":[{"candidate_id":"candidate:opg401-a01-m05-pentagon-clusters","kind":"proof","locator":"research/artifacts/candidates/opg401-a01-m05-pentagon-clusters.md","sha256":"4bbccc53d419d1381c18850ef132d87f5a7a19a638aedebc2da8fa4929733a98"}],
 "atomic_claims":[
