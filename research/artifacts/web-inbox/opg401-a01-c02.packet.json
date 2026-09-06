@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762563, "node_id": "R_kgDOUP0SQw", "default_branch": "main"},
+  "problem_id": "problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256": "76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256": "d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision": "7bc59e6daf30bb8b2f79132a976d74dd1e0675bf",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg401-a01",
+  "route_id": "route:degree-two-extension-criterion-v1",
+  "graph_id": "graph:opg401-initial-v1",
+  "obligation_id": "obligation:opg401-z20-extension",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {"branch": "web/attempt-opg401-a01-c02-neighbor-quotient", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": 6, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/6"},
+  "objective": "Characterize exactly when identifying the two neighbors of a degree-two vertex preserves the triangle-free planar subcubic class, and derive a conditional reducibility consequence of the Z20 extension criterion.",
+  "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c02-neighbor-quotient", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c02-neighbor-quotient.md", "sha256": "345489c3a1813b5e3698067c1bd1891f1a55be1716a006a171eb131d01e67f93"}],
+  "atomic_claims": [
+    {"claim_id": "claim:opg401-c02-class-preservation", "text": "For a degree-two v with neighbors u,w, the simple quotient identifying u,w after deleting v stays in the contract class exactly when their external-neighborhood union has size at most three and v lies on no five-cycle.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c02-quotient-extension", "text": "Every (20,7)-coloring of that quotient lifts to equal neighbor colors in G-v and has seven extensions at v; hence a vertex-minimal obstruction cannot contain a class-preserving such reduction.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c02-critical-alternative", "text": "Every degree-two vertex in a vertex-minimal obstruction lies on a five-cycle or has two degree-three neighbors with disjoint external neighborhoods.", "status": "candidate"}
+  ],
+  "assumptions": ["Finite simple triangle-free planar G of maximum degree at most three; v has exactly two distinct neighbors.", "Parallel edges in the identified quotient are suppressed; loops do not arise because the two neighbors are nonadjacent.", "Planarity under edge contraction and the generated local extension candidate c01 are explicit premises.", "Minimal-counterexample consequences are conditional on minimum vertex order in the contract class."],
+  "risks": ["The local quotient criterion is not a whole-problem proof.", "Removing the five-cycle condition or the degree-union condition makes class preservation fail, as shown by explicit small witnesses.", "Prior candidate transport is not mathematical verification.", "No graph enumeration, solver, kernel execution, or verifier receipt is claimed."],
+  "open_obligations": ["obligation:opg401-z20-extension", "obligation:opg401-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "problem-library/records/canonical-problems.jsonl", "revision": "7bc59e6daf30bb8b2f79132a976d74dd1e0675bf", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/records/obligation-graphs.jsonl", "revision": "7bc59e6daf30bb8b2f79132a976d74dd1e0675bf", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/records/failed-routes.jsonl", "revision": "7bc59e6daf30bb8b2f79132a976d74dd1e0675bf", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c01-local-extension.md", "revision": "7bc59e6daf30bb8b2f79132a976d74dd1e0675bf", "relation": "weaker"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/source-notes/opg401-a01-c01-definition-sources.md", "revision": "7bc59e6daf30bb8b2f79132a976d74dd1e0675bf", "relation": "prior_art"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T07:15:13.971899+00:00"
+}
