@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762563, "node_id": "R_kgDOUP0SQw", "default_branch": "main"},
+  "problem_id": "problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256": "76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256": "d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision": "d3a2ca42cb71dc61d995d2b2772e064f2ad8bece",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg401-a01",
+  "route_id": "route:degree-two-extension-criterion-v1",
+  "graph_id": "graph:opg401-initial-v1",
+  "obligation_id": "obligation:opg401-z20-extension",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {"branch": "web/attempt-opg401-a01-c04-recoloring", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "objective": "Derive an exact bounded-neighbor-recoloring criterion, its sharp list-size threshold, rigid signatures, and the pentagon reduction for at least three degree-two vertices.",
+  "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c04-recoloring", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c04-recoloring.md", "sha256": "1d2e7c08395fb5bd67783858c24116239831d360c98c2c8ce904ddd2b49b5e21"}],
+  "atomic_claims": [
+    {"claim_id": "claim:opg401-c04-list-repair", "text": "For fixed outside colors, repair in {u,v,w} exists exactly when J is not contained in B(I); for I=s+[0,m-1], B(I)=s+[m+6,13].", "status": "candidate"},
+    {"claim_id": "claim:opg401-c04-sharp-threshold", "text": "Available-list sizes summing to at least nine guarantee repair; a seven-vertex tree with size sum eight is a sharp fixed-boundary failure.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c04-pinning", "text": "In a vertex-minimal obstruction, deleting two adjacent degree-two vertices forces equal endpoint colors c, with both outside-neighbor color pairs equal to {c+7,c+13}.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c04-pentagon-reduction", "text": "A five-cycle with at least three degree-two vertices is excluded from a vertex-minimal obstruction by explicit bounded recoloring.", "status": "candidate"}
+  ],
+  "assumptions": ["Finite simple triangle-free planar graph of maximum degree at most three, with the stated local degrees.", "Outside colors are fixed exactly as specified; the two neighbors of a degree-two vertex are nonadjacent.", "Minimal-obstruction consequences are conditional on minimum vertex order.", "Generated candidates c01 and c03 are explicit mathematical dependencies, not verification receipts."],
+  "risks": ["A local repair failure does not exclude larger recolorings.", "The size-eight tree is not a graph counterexample to the ProblemContract.", "The pentagon argument does not cover exactly two degree-two vertices.", "No mathematical computation or kernel run is claimed."],
+  "open_obligations": ["obligation:opg401-z20-extension", "obligation:opg401-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "problem-library/records/canonical-problems.jsonl", "revision": "d3a2ca42cb71dc61d995d2b2772e064f2ad8bece", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/records/obligation-graphs.jsonl", "revision": "d3a2ca42cb71dc61d995d2b2772e064f2ad8bece", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c01-local-extension.md", "revision": "d3a2ca42cb71dc61d995d2b2772e064f2ad8bece", "relation": "weaker"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c03-path-sumsets.md", "revision": "d3a2ca42cb71dc61d995d2b2772e064f2ad8bece", "relation": "weaker"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T07:37:31.470365+00:00"
+}
