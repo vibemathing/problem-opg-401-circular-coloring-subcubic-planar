@@ -17,8 +17,8 @@
     "branch": "web/attempt-opg401-a01-c01-local-extension",
     "issue_number": 4,
     "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 5,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/5"
   },
   "objective": "Exact Z20 allowed-color intersection and fixed degree-two coloring extension criterion, with an eleven-class derivation and explicit failure of unconditional greedy extension.",
   "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c01-local-extension", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c01-local-extension.md", "sha256": "e735494086580ac664a075c3f97645c0c0358f418c7477cc05379d6945aba8e0"}],
