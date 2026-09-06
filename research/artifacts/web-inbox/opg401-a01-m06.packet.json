@@ -1,0 +1,27 @@
+{
+"schema_version":"1.1.0","channel":"chatgpt-web-github-issue-pr-writer","repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+"repository_identity":{"binding_state":"verified","database_id":1358762563,"node_id":"R_kgDOUP0SQw","default_branch":"main"},
+"problem_id":"problem:opg-401-circular-coloring-subcubic-planar","problem_contract_sha256":"76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6","harness_snapshot_sha256":"d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f","base_revision":"f9c03333f2dcc344fb85b904a7ab9ba0b3b675e6","importer_policy_sha256":"a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+"attempt_id":"attempt:web-20260906-opg401-a01","route_id":"route:degree-two-extension-criterion-v1","graph_id":"graph:opg401-initial-v1","obligation_id":"obligation:opg401-root",
+"generator":{"principal":"chatgpt-web-github","model_label":"GPT-6 Astra Pro","model_fingerprint_status":"unverified"},
+"transport":{"branch":"web/attempt-opg401-a01-m06-single-ear-boundary","issue_number":4,"issue_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4","pull_request_number":20,"pull_request_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/20"},
+"objective":"Classify every fixed boundary of the eight-vertex single-ear carrier and reduce the replacement gap to four explicit normalized signatures.",
+"candidate_artifacts":[{"candidate_id":"candidate:opg401-a01-m06-single-ear-boundary","kind":"proof","locator":"research/artifacts/candidates/opg401-a01-m06-single-ear-boundary.md","sha256":"3fc031341ad807925cfc372967be71ed8119e207fcd05ae89b9cd49d76ab554e"}],
+"atomic_claims":[
+{"claim_id":"claim:opg401-m06-complete-boundary","text":"The single-ear boundary fails precisely in the basic three-terminal table or in four additional p-dependent rows; the hand-derived total is 34160 bad quadruples out of 160000.","status":"candidate"},
+{"claim_id":"claim:opg401-m06-replacement-rigidity","text":"A class-preserving five-cycle replacement is smaller by three vertices; in a minimum obstruction every replacement coloring belongs to the four additional signatures.","status":"candidate"},
+{"claim_id":"claim:opg401-m06-critical-region-shape","text":"The eight-vertex carrier has no extra internal edges and a connected deletion in a minimum obstruction.","status":"candidate"}],
+"assumptions":["The local problem preserves every outside color and permits repeated outside vertices subject to simplicity and triangle-freeness.","Structural and replacement assertions assume minimum-order noncolorability in the frozen class.","Prior candidate proofs are generated dependencies, not admitted Evidence."],
+"risks":["The smaller five-cycle does not lift every fixed coloring: boundary (0,0,2,0) has the displayed counterexample.","The four remaining signatures do not yet imply a contradiction or root closure.","No mathematical enumeration, solver, compiler or verifier receipt is claimed."],
+"open_obligations":["obligation:opg401-z20-extension","obligation:opg401-root"],
+"failed_route_proposal":{"route_fingerprint":"e370181c2e08edf6e8faf047e3711349a45dca58aef86b61bcc32424c5fd710b","failure_class":"counterexample","blocker":"Universal fixed-boundary lifting from the five-cycle replacement to the single-ear region fails at (p,q,r,s)=(0,0,2,0); the explicit replacement coloring is (7,14,1,8,15).","evidence_locators":["research/artifacts/candidates/opg401-a01-m06-single-ear-boundary.md#7-a-precise-failed-shortcut-and-a-reusable-witness"],"next_obligation":"obligation:opg401-root"},
+"source_refs":[
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"problem-library/records/canonical-problems.jsonl","revision":"f9c03333f2dcc344fb85b904a7ab9ba0b3b675e6","relation":"exact"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/records/obligation-graphs.jsonl","revision":"f9c03333f2dcc344fb85b904a7ab9ba0b3b675e6","relation":"exact"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/records/failed-routes.jsonl","revision":"f9c03333f2dcc344fb85b904a7ab9ba0b3b675e6","relation":"prior_art"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-c03-path-sumsets.md","revision":"f9c03333f2dcc344fb85b904a7ab9ba0b3b675e6","relation":"prior_art"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-m02-pentagon-122.md","revision":"f9c03333f2dcc344fb85b904a7ab9ba0b3b675e6","relation":"prior_art"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-m03-weighted-core.md","revision":"f9c03333f2dcc344fb85b904a7ab9ba0b3b675e6","relation":"prior_art"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-m05-pentagon-clusters.md","revision":"f9c03333f2dcc344fb85b904a7ab9ba0b3b675e6","relation":"prior_art"}],
+"requested_verification":["kernel_check","axiom_escape_audit","statement_faithfulness"],"verdict":"candidate_only","created_at":"2026-09-06T16:50:00+00:00"
+}
