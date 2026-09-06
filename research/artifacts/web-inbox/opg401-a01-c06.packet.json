@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762563, "node_id": "R_kgDOUP0SQw", "default_branch": "main"},
+  "problem_id": "problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256": "76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256": "d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision": "663d43cd29bd5b434a0a3f1fc52c3701d4615f41",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg401-a01",
+  "route_id": "route:degree-two-extension-criterion-v1",
+  "graph_id": "graph:opg401-initial-v1",
+  "obligation_id": "obligation:opg401-z20-extension",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {"branch": "web/attempt-opg401-a01-c06-tight-recoloring", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": 10, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/10"},
+  "objective": "Translate forced equal-color endpoints into tight-arc reachability; derive a theta reduction and a conditional 24-vertex lower bound for minimal obstructions containing adjacent degree-two vertices.",
+  "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c06-tight-recoloring", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c06-tight-recoloring.md", "sha256": "1100593259b8ba45f76efc15fdb1f4cf1401a92fa8b7b069c9fd2e6f50604c67"}],
+  "atomic_claims": [
+    {"claim_id": "claim:opg401-c06-unit-shift", "text": "Adding one modulo twenty to a vertex subset preserves a (20,7)-coloring exactly when no color-difference-seven arc leaves the subset.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c06-forced-reachability", "text": "If two distinct vertices are equal-colored in every (20,7)-coloring, they are mutually tight-reachable in each coloring; directed paths between them have length divisible by twenty.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c06-theta-reduction", "text": "The specified internally disjoint paths of lengths 3,2,2 form a reducible configuration when the length-three internal vertices have degree two and the branch vertices have degree three.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c06-order-bound", "text": "A vertex-minimal obstruction containing adjacent degree-two vertices has at least 24 vertices; this is not a bound without that configuration hypothesis.", "status": "candidate"}
+  ],
+  "assumptions": ["H is finite and has at least one (20,7)-coloring in the forced-equality claim.", "Recoloring a subset is simultaneous; single-vertex reachability is not assumed.", "Graph applications retain finite simplicity, triangle-freeness, planarity and maximum degree at most three.", "The order bound assumes a vertex-minimal noncolorable member with adjacent degree-two vertices."],
+  "risks": ["Mutual tight reachability in one coloring does not imply universal forced equality; an explicit 21-vertex witness is provided.", "The 24-vertex bound is conditional and not a root proof.", "The primary-paper comparison uses parsed PDF text; screenshots failed.", "No mathematical search, solver or kernel run is claimed."],
+  "open_obligations": ["obligation:opg401-z20-extension", "obligation:opg401-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "problem-library/records/canonical-problems.jsonl", "revision": "663d43cd29bd5b434a0a3f1fc52c3701d4615f41", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/records/obligation-graphs.jsonl", "revision": "663d43cd29bd5b434a0a3f1fc52c3701d4615f41", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c01-local-extension.md", "revision": "663d43cd29bd5b434a0a3f1fc52c3701d4615f41", "relation": "weaker"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c03-path-sumsets.md", "revision": "663d43cd29bd5b434a0a3f1fc52c3701d4615f41", "relation": "weaker"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c04-recoloring.md", "revision": "663d43cd29bd5b434a0a3f1fc52c3701d4615f41", "relation": "weaker"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/source-notes/opg401-a01-c06-recoloring-source.md", "revision": "sha256:fa80c54da47b0cfab665cc4fdae265cbae05b0f84a40e1a8b1932d6d71ae59ca", "relation": "prior_art"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T08:08:31.959926+00:00"
+}
