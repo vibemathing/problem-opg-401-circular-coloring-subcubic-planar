@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762563, "node_id": "R_kgDOUP0SQw", "default_branch": "main"},
+  "problem_id": "problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256": "76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256": "d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision": "ae6daf7c02c8dbd1067d5003e0cfc1306d75584b",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg401-a01",
+  "route_id": "route:degree-two-extension-criterion-v1",
+  "graph_id": "graph:opg401-initial-v1",
+  "obligation_id": "obligation:opg401-z20-extension",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {"branch": "web/attempt-opg401-a01-c05-pentagon-boundary", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "objective": "Classify exactly which fixed outside-color triples extend over a five-cycle with two adjacent degree-two vertices.",
+  "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c05-pentagon-boundary", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c05-pentagon-boundary.md", "sha256": "ed69b76732dd7d9a4d99e0d221d1bd28cfda06a0fb8bb939339dc0c1aa0f92b8"}],
+  "atomic_claims": [
+    {"claim_id": "claim:opg401-c05-boundary-criterion", "text": "For unequal outside colors p,q, extension is equivalent to A(r) meeting C6(p) intersect C6(q); for p=q it is equivalent to A(r) meeting C5(p).", "status": "candidate"},
+    {"claim_id": "claim:opg401-c05-boundary-table", "text": "After p=0,q=d normalization, bad third colors are {19,0,1} for d=0, {0,...,d} for 1<=d<=7, and {0,d} for 8<=d<=10.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c05-boundary-count", "text": "The exact boundary relation has 1660 nonextendible and 6340 extendible ordered triples, by the symmetry-table count, not executed enumeration.", "status": "candidate"}
+  ],
+  "assumptions": ["The chordless five-cycle has exactly two adjacent degree-two vertices and three degree-three vertices.", "All outside colors are fixed and proper; all five inside colors may be chosen anew.", "Outside-neighbor vertex coincidences are allowed where consistent with the graph.", "The c01 and c03 generated local/path lemmas are explicit dependencies."],
+  "risks": ["A bad boundary triple is not a graph counterexample.", "The criterion does not show that an outside coloring avoiding the table always exists.", "No graph enumeration or theorem-prover run is reported."],
+  "open_obligations": ["obligation:opg401-z20-extension", "obligation:opg401-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "problem-library/records/canonical-problems.jsonl", "revision": "ae6daf7c02c8dbd1067d5003e0cfc1306d75584b", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/records/obligation-graphs.jsonl", "revision": "ae6daf7c02c8dbd1067d5003e0cfc1306d75584b", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c01-local-extension.md", "revision": "ae6daf7c02c8dbd1067d5003e0cfc1306d75584b", "relation": "weaker"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c03-path-sumsets.md", "revision": "ae6daf7c02c8dbd1067d5003e0cfc1306d75584b", "relation": "weaker"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c04-recoloring.md", "revision": "ae6daf7c02c8dbd1067d5003e0cfc1306d75584b", "relation": "prior_art"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T07:55:29.717434+00:00"
+}
