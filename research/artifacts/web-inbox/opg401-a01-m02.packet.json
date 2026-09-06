@@ -13,7 +13,7 @@
   "graph_id":"graph:opg401-initial-v1",
   "obligation_id":"obligation:opg401-root",
   "generator":{"principal":"chatgpt-web-github","model_label":"GPT-6 Astra Pro","model_fingerprint_status":"unverified"},
-  "transport":{"branch":"web/attempt-opg401-a01-m02-pentagon-122","issue_number":4,"issue_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4","pull_request_number":null,"pull_request_url":null},
+  "transport":{"branch":"web/attempt-opg401-a01-m02-pentagon-122","issue_number":4,"issue_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4","pull_request_number":16,"pull_request_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/16"},
   "objective":"Resolve the 122 pentagon boundary exactly and turn this unavoidable face into a forced adjacent pentagon and a quantitative rigidity condition.",
   "candidate_artifacts":[{"candidate_id":"candidate:opg401-a01-m02-pentagon-122","kind":"proof","locator":"research/artifacts/candidates/opg401-a01-m02-pentagon-122.md","sha256":"cd7d21fda75d34a38ec83b0e99af33207850aa5a59f42f7085175a79d1efd783"}],
   "atomic_claims":[
