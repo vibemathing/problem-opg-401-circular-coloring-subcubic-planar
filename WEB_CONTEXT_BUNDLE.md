@@ -74,7 +74,27 @@ This file is generated from repository truth and bounded for the web channel. It
       "web_status": "active"
     }
   ],
-  "attempts": [],
+  "attempts": [
+    {
+      "artifacts": [],
+      "attempt_id": "attempt:web-20260906-opg401-a01",
+      "claims": [],
+      "completed_at": null,
+      "generator": "chatgpt-web-github",
+      "inputs": [
+        "problem-library/records/canonical-problems.jsonl",
+        "research/records/failed-routes.jsonl"
+      ],
+      "lifecycle": "running",
+      "method": "derivation",
+      "objective": "在 Z_20 上令 A(a)={x:7≤d_20(x,a)≤13}。严格刻画任意 a,b∈Z_20 时 A(a)∩A(b) 非空的充要条件及其大小（按旋转/反射分类），并由此给出向一个度为 2 的未着色顶点延拓 (20,7)-coloring 的精确局部判据。",
+      "obligation_graph_id": "graph:opg401-initial-v1",
+      "problem_contract_sha256": "76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+      "problem_id": "problem:opg-401-circular-coloring-subcubic-planar",
+      "route_id": "route:degree-two-extension-criterion-v1",
+      "started_at": "2026-09-06T05:03:30Z"
+    }
+  ],
   "failed_routes": [],
   "knowledge_operators": [
     {
@@ -203,7 +223,40 @@ This file is generated from repository truth and bounded for the web channel. It
       "source_id": "sagemath"
     }
   ],
-  "obligation_graphs": [],
+  "obligation_graphs": [
+    {
+      "attempt_id": "attempt:web-20260906-opg401-a01",
+      "graph_id": "graph:opg401-initial-v1",
+      "obligations": [
+        {
+          "dependencies": [
+            "obligation:opg401-z20-extension"
+          ],
+          "kind": "root_claim",
+          "obligation_id": "obligation:opg401-root",
+          "statement": {
+            "formal_declaration": null,
+            "language": "en",
+            "text": "Does every finite triangle-free planar graph of maximum degree at most 3 have circular chromatic number at most 20/7?"
+          },
+          "statement_sha256": "82cf26721e875258d7975935cb5a91672bb2a541d83e9965fecb415486b1bea8"
+        },
+        {
+          "dependencies": [],
+          "kind": "lemma",
+          "obligation_id": "obligation:opg401-z20-extension",
+          "statement": {
+            "formal_declaration": null,
+            "language": "zh",
+            "text": "在 Z_20 上令 A(a)={x:7≤d_20(x,a)≤13}。严格刻画任意 a,b∈Z_20 时 A(a)∩A(b) 非空的充要条件及其大小（按旋转/反射分类），并由此给出向一个度为 2 的未着色顶点延拓 (20,7)-coloring 的精确局部判据。"
+          },
+          "statement_sha256": "16533194e20493e83312edbc99b93714f07282d4e65bb58c4cee1c734fa7594e"
+        }
+      ],
+      "root_obligation_id": "obligation:opg401-root",
+      "route_id": "route:degree-two-extension-criterion-v1"
+    }
+  ],
   "problem_contract": {
     "acceptance": {
       "policy": "solution-admission-v1"
