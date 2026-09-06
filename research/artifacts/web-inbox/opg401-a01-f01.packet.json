@@ -13,9 +13,9 @@
   "graph_id": "graph:opg401-initial-v1",
   "obligation_id": "obligation:opg401-z20-extension",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg401-a01-f01-extension-bijection", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg401-a01-f01-extension-bijection", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": 14, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/14"},
   "objective": "Give an explicit bijection between preserving graph-coloring extensions and local available colors, prove placeholder invariance, and specify exact witnesses against eight incorrect encodings.",
-  "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-f01-extension-bijection", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-f01-extension-bijection.md", "sha256": "79dc0c4f578330e95a080259a3d3282d45669d1c5a8a5a85547a1f3d5643c6cb"}],
+  "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-f01-extension-bijection", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-f01-extension-bijection.md", "sha256": "2963b681e2f49202b05a135f5651bb4ab4438aa8859a959308a64ece028c2d56"}],
   "atomic_claims": [
     {"claim_id": "claim:opg401-f01-extension-bijection", "text": "For a finite simple graph and a valid coloring away from v, evaluation at v bijects preserving full extensions with the common allowed-color set of the neighbors; explicit insertion is its inverse.", "status": "candidate"},
     {"claim_id": "claim:opg401-f01-exact-extension-count", "text": "Preserving-extension cardinality equals available-color cardinality; for two distinct neighbors it is max(0,7-delta), with a separate twenty-choice degree-zero case.", "status": "candidate"},
