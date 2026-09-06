@@ -1,0 +1,40 @@
+{
+  "schema_version":"1.1.0",
+  "channel":"chatgpt-web-github-issue-pr-writer",
+  "repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity":{"binding_state":"verified","database_id":1358762563,"node_id":"R_kgDOUP0SQw","default_branch":"main"},
+  "problem_id":"problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256":"76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256":"d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision":"7da5e4f96aab1566b2110d82df377de03e618485",
+  "importer_policy_sha256":"a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id":"attempt:web-20260906-opg401-a01",
+  "route_id":"route:degree-two-extension-criterion-v1",
+  "graph_id":"graph:opg401-initial-v1",
+  "obligation_id":"obligation:opg401-root",
+  "generator":{"principal":"chatgpt-web-github","model_label":"GPT-6 Astra Pro","model_fingerprint_status":"unverified"},
+  "transport":{"branch":"web/attempt-opg401-a01-m02-pentagon-122","issue_number":4,"issue_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4","pull_request_number":null,"pull_request_url":null},
+  "objective":"Resolve the 122 pentagon boundary exactly and turn this unavoidable face into a forced adjacent pentagon and a quantitative rigidity condition.",
+  "candidate_artifacts":[{"candidate_id":"candidate:opg401-a01-m02-pentagon-122","kind":"proof","locator":"research/artifacts/candidates/opg401-a01-m02-pentagon-122.md","sha256":"cd7d21fda75d34a38ec83b0e99af33207850aa5a59f42f7085175a79d1efd783"}],
+  "atomic_claims":[
+    {"claim_id":"claim:opg401-m02-boundary-table","text":"For a-u-b-c-v-a with u,v of degree two and fixed outside colors p,q,r at a,b,c, normalized q=0,r=d, bad p are all colors if d=0, exactly 7..14 if d=1, and none if d>=2.","status":"candidate"},
+    {"claim_id":"claim:opg401-m02-external-five-cycle","text":"In a minimum-order obstruction the outside neighbors beta,gamma of b,c are distinct, nonadjacent and have a common neighbor in the connected deletion H.","status":"candidate"},
+    {"claim_id":"claim:opg401-m02-order-bound","text":"Such a minimum obstruction has at least 23 vertices; the bound improves to 26 when all H-colorings give beta,gamma equal colors.","status":"candidate"}
+  ],
+  "assumptions":["All graphs in critical applications satisfy the frozen class and minimum-order noncolorability hypothesis.","The local boundary calculation preserves every outside color; the two degree-two vertices are nonadjacent.","Earlier candidates are generated proof inputs, not admitted Evidence."],
+  "risks":["This does not yet eliminate all 122 pentagons or the remaining cubic short faces.","The adjacent-degree-two c05 table is a different configuration and must not be substituted.","No mathematical enumerator or proof-assistant execution is asserted."],
+  "open_obligations":["obligation:opg401-z20-extension","obligation:opg401-root"],
+  "failed_route_proposal":null,
+  "source_refs":[
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"problem-library/records/canonical-problems.jsonl","revision":"7da5e4f96aab1566b2110d82df377de03e618485","relation":"exact"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/records/obligation-graphs.jsonl","revision":"7da5e4f96aab1566b2110d82df377de03e618485","relation":"exact"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/records/failed-routes.jsonl","revision":"7da5e4f96aab1566b2110d82df377de03e618485","relation":"prior_art"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-c01-local-extension.md","revision":"7da5e4f96aab1566b2110d82df377de03e618485","relation":"prior_art"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-c06-tight-recoloring.md","revision":"7da5e4f96aab1566b2110d82df377de03e618485","relation":"prior_art"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-m01-critical-structure.md","revision":"7da5e4f96aab1566b2110d82df377de03e618485","relation":"prior_art"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/source-notes/opg401-a01-m02-sources.md","revision":"sha256:06cb3564a89dae62f44668db2fab047a586f9acc1f57c6c6d6588995084da680","relation":"prior_art"}
+  ],
+  "requested_verification":["kernel_check","axiom_escape_audit","statement_faithfulness"],
+  "verdict":"candidate_only",
+  "created_at":"2026-09-06T15:36:26.809076+00:00"
+}
