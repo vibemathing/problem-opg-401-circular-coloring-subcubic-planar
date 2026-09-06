@@ -13,7 +13,7 @@
   "graph_id": "graph:opg401-initial-v1",
   "obligation_id": "obligation:opg401-z20-extension",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg401-a01-g01-planar-k23", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg401-a01-g01-planar-k23", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": 13, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/13"},
   "objective": "Derive class-level K2,3 reducibility using the degree-two extension criterion, a planar attachment bound, and separate choices of whole-component color rotations.",
   "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-g01-planar-k23", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-g01-planar-k23.md", "sha256": "f352ab0a3e464b448bb1d57c8770f40da96eb2c21b95a7ff0015f781565ae16e"}],
   "atomic_claims": [
