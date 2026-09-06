@@ -13,7 +13,7 @@
   "graph_id": "graph:opg401-initial-v1",
   "obligation_id": "obligation:opg401-z20-extension",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg401-a01-c08-common-neighborhoods", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg401-a01-c08-common-neighborhoods", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/12", "pull_request_number": 12, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/12"},
   "objective": "Generalize the exact local intersection to any nonempty neighbor-color set, with a two-color certificate, degree-zero exception and sharp parameter-range boundary.",
   "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c08-common-neighborhoods", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c08-common-neighborhoods.md", "sha256": "a7be02dcc8b42e0fc9ece0d146a80193aba02ed29e0692563423d7107ce97138"}],
   "atomic_claims": [
