@@ -13,7 +13,7 @@
   "graph_id": "graph:opg401-initial-v1",
   "obligation_id": "obligation:opg401-z20-extension",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg401-a01-c07-formalization-plan", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg401-a01-c07-formalization-plan", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": 11, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/11"},
   "objective": "Freeze a bounded formalization ToolPlan and an explicit statement-faithfulness bridge for the original local extension obligation, without claiming execution.",
   "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c07-formalization-plan", "kind": "formalization", "locator": "research/artifacts/candidates/opg401-a01-c07-formalization-plan.md", "sha256": "9151eb47c385ccac20cd8236ddb484aac93a571848d7ebbc6d9c614bccde38ed"}],
   "atomic_claims": [{"claim_id": "claim:opg401-c07-faithfulness-map", "text": "The proposed finite representative encoding and generic graph-extension bridge preserve the local target's quantifiers, exact cardinality, and fixed-outside-color condition.", "status": "candidate"}],
