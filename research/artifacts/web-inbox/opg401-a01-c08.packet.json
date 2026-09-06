@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762563, "node_id": "R_kgDOUP0SQw", "default_branch": "main"},
+  "problem_id": "problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256": "76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256": "d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision": "19f2a1d50ccfd55d79ca291bb248022daef95e36",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg401-a01",
+  "route_id": "route:degree-two-extension-criterion-v1",
+  "graph_id": "graph:opg401-initial-v1",
+  "obligation_id": "obligation:opg401-z20-extension",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {"branch": "web/attempt-opg401-a01-c08-common-neighborhoods", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "objective": "Generalize the exact local intersection to any nonempty neighbor-color set, with a two-color certificate, degree-zero exception and sharp parameter-range boundary.",
+  "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c08-common-neighborhoods", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c08-common-neighborhoods.md", "sha256": "a7be02dcc8b42e0fc9ece0d146a80193aba02ed29e0692563423d7107ce97138"}],
+  "atomic_claims": [
+    {"claim_id": "claim:opg401-c08-common-cardinality", "text": "For any nonempty C in Z20, the common allowed-color set has size max(0,7-D(C)), where D is maximum pairwise circular distance.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c08-two-color-certificate", "text": "The common allowed set of any nonempty center family is exactly the intersection of two of its members, allowing repetition.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c08-vertex-extension", "text": "A fixed coloring of G-v extends exactly when every pair of neighbor colors has distance at most six; degree zero separately has twenty choices.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c08-parameter-range", "text": "The analogous diameter count holds for 2q<=p<3q, but fails at p=3q in an explicit three-center example.", "status": "candidate"}
+  ],
+  "assumptions": ["Center sets are nonempty in the diameter formula.", "Graph extension keeps all old colors fixed.", "The parameter generalization is explicitly restricted to 2q<=p<3q and does not modify the frozen ProblemContract."],
+  "risks": ["The determining two constraints depend on the coloring and do not justify deleting a fixed graph edge.", "The empty-neighborhood case is not covered by the nonempty-family formula.", "Local pairwise sufficiency does not solve global graph colorability.", "No mathematical enumeration or proof-assistant run is claimed."],
+  "open_obligations": ["obligation:opg401-z20-extension", "obligation:opg401-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "problem-library/records/canonical-problems.jsonl", "revision": "19f2a1d50ccfd55d79ca291bb248022daef95e36", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/records/obligation-graphs.jsonl", "revision": "19f2a1d50ccfd55d79ca291bb248022daef95e36", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/records/failed-routes.jsonl", "revision": "19f2a1d50ccfd55d79ca291bb248022daef95e36", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c01-local-extension.md", "revision": "19f2a1d50ccfd55d79ca291bb248022daef95e36", "relation": "weaker"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c07-formalization-plan.md", "revision": "19f2a1d50ccfd55d79ca291bb248022daef95e36", "relation": "prior_art"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T08:37:03.546853+00:00"
+}
