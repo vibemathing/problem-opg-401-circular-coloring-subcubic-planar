@@ -13,7 +13,7 @@
   "graph_id": "graph:opg401-initial-v1",
   "obligation_id": "obligation:opg401-z20-extension",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg401-a01-c05-pentagon-boundary", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg401-a01-c05-pentagon-boundary", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": 9, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/9"},
   "objective": "Classify exactly which fixed outside-color triples extend over a five-cycle with two adjacent degree-two vertices.",
   "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c05-pentagon-boundary", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c05-pentagon-boundary.md", "sha256": "ed69b76732dd7d9a4d99e0d221d1bd28cfda06a0fb8bb939339dc0c1aa0f92b8"}],
   "atomic_claims": [
