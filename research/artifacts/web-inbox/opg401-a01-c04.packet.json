@@ -13,7 +13,7 @@
   "graph_id": "graph:opg401-initial-v1",
   "obligation_id": "obligation:opg401-z20-extension",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg401-a01-c04-recoloring", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg401-a01-c04-recoloring", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": 8, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/8"},
   "objective": "Derive an exact bounded-neighbor-recoloring criterion, its sharp list-size threshold, rigid signatures, and the pentagon reduction for at least three degree-two vertices.",
   "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c04-recoloring", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c04-recoloring.md", "sha256": "1d2e7c08395fb5bd67783858c24116239831d360c98c2c8ce904ddd2b49b5e21"}],
   "atomic_claims": [
