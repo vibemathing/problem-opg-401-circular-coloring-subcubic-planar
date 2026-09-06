@@ -13,7 +13,7 @@
   "graph_id": "graph:opg401-initial-v1",
   "obligation_id": "obligation:opg401-z20-extension",
   "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
-  "transport": {"branch": "web/attempt-opg401-a01-c06-tight-recoloring", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": null, "pull_request_url": null},
+  "transport": {"branch": "web/attempt-opg401-a01-c06-tight-recoloring", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": 10, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/10"},
   "objective": "Translate forced equal-color endpoints into tight-arc reachability; derive a theta reduction and a conditional 24-vertex lower bound for minimal obstructions containing adjacent degree-two vertices.",
   "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c06-tight-recoloring", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c06-tight-recoloring.md", "sha256": "1100593259b8ba45f76efc15fdb1f4cf1401a92fa8b7b069c9fd2e6f50604c67"}],
   "atomic_claims": [
