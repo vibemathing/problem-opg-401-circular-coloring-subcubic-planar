@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity": {"binding_state": "verified", "database_id": 1358762563, "node_id": "R_kgDOUP0SQw", "default_branch": "main"},
+  "problem_id": "problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256": "76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256": "d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision": "44e8c3aa7d6ed9633cac080f1950dc2e433fd084",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg401-a01",
+  "route_id": "route:degree-two-extension-criterion-v1",
+  "graph_id": "graph:opg401-initial-v1",
+  "obligation_id": "obligation:opg401-z20-extension",
+  "generator": {"principal": "chatgpt-web-github", "model_label": "GPT-6 Astra Pro", "model_fingerprint_status": "unverified"},
+  "transport": {"branch": "web/attempt-opg401-a01-c03-path-sumsets", "issue_number": 4, "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4", "pull_request_number": 7, "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/7"},
+  "objective": "Derive exact endpoint feasibility and counts for (20,7)-colored degree-two paths, and extract valid long-thread and four-cycle reductions.",
+  "candidate_artifacts": [{"candidate_id": "candidate:opg401-a01-c03-path-sumsets", "kind": "proof", "locator": "research/artifacts/candidates/opg401-a01-c03-path-sumsets.md", "sha256": "d12e9eb2eb89b190c050e3485b5a211ab3f40d2de7b917a1c671ae6d3bfd055d"}],
+  "atomic_claims": [
+    {"claim_id": "claim:opg401-c03-path-sumset", "text": "An L-edge path with fixed endpoint difference r is (20,7)-colorable exactly when r is in [7L,13L] modulo 20.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c03-path-classification", "text": "The exact endpoint conditions at lengths 1,2,3 are respectively delta>=7, delta<=6, and distinct colors; lengths at least four have no endpoint obstruction.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c03-long-thread-reduction", "text": "A vertex-minimal obstruction has no three consecutive degree-two vertices; the coincident-exterior-endpoint four-cycle case is explicitly included.", "status": "candidate"},
+    {"claim_id": "claim:opg401-c03-short-thread-reduction", "text": "A four-cycle with adjacent degree-two vertices is reducible; any adjacent degree-two pair in a vertex-minimal obstruction must lie on a five-cycle.", "status": "candidate"}
+  ],
+  "assumptions": ["All residues are modulo twenty and allowed increments are 7 through 13 inclusive.", "Internal vertices of a graph path being extended have degree two, so they have no omitted outside constraints.", "Minimal-obstruction applications assume minimum vertex order in the frozen graph class."],
+  "risks": ["Equal fixed endpoints obstruct a three-edge path even inside C5; no unconditional extension claim is made.", "The path theorem and reductions do not close the root claim.", "The coefficient table is hand-derived, not executed enumeration.", "No solver, theorem prover or mathematical verification receipt is claimed."],
+  "open_obligations": ["obligation:opg401-z20-extension", "obligation:opg401-root"],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "problem-library/records/canonical-problems.jsonl", "revision": "44e8c3aa7d6ed9633cac080f1950dc2e433fd084", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/records/obligation-graphs.jsonl", "revision": "44e8c3aa7d6ed9633cac080f1950dc2e433fd084", "relation": "exact"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c01-local-extension.md", "revision": "44e8c3aa7d6ed9633cac080f1950dc2e433fd084", "relation": "weaker"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/candidates/opg401-a01-c02-neighbor-quotient.md", "revision": "44e8c3aa7d6ed9633cac080f1950dc2e433fd084", "relation": "prior_art"},
+    {"repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar", "path": "research/artifacts/source-notes/opg401-a01-c01-definition-sources.md", "revision": "44e8c3aa7d6ed9633cac080f1950dc2e433fd084", "relation": "prior_art"}
+  ],
+  "requested_verification": ["kernel_check", "axiom_escape_audit", "statement_faithfulness"],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-06T07:24:03.423703+00:00"
+}
