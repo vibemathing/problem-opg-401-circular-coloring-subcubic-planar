@@ -1,0 +1,30 @@
+{
+"schema_version":"1.1.0","channel":"chatgpt-web-github-issue-pr-writer","repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+"repository_identity":{"binding_state":"verified","database_id":1358762563,"node_id":"R_kgDOUP0SQw","default_branch":"main"},
+"problem_id":"problem:opg-401-circular-coloring-subcubic-planar","problem_contract_sha256":"76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6","harness_snapshot_sha256":"d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f","base_revision":"88a42d5c35568268e15cda980a81919432d753dd","importer_policy_sha256":"a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+"attempt_id":"attempt:web-20260906-opg401-a01","route_id":"route:degree-two-extension-criterion-v1","graph_id":"graph:opg401-initial-v1","obligation_id":"obligation:opg401-root",
+"generator":{"principal":"chatgpt-web-github","model_label":"GPT-6 Astra Pro","model_fingerprint_status":"unverified"},
+"transport":{"branch":"web/attempt-opg401-a01-m05-pentagon-clusters","issue_number":4,"issue_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4","pull_request_number":19,"pull_request_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/19"},
+"objective":"Connect 122 faces to cubic pentagon carriers, eliminate double-ear clusters, and isolate the remaining connected-boundary charge problem.",
+"candidate_artifacts":[{"candidate_id":"candidate:opg401-a01-m05-pentagon-clusters","kind":"proof","locator":"research/artifacts/candidates/opg401-a01-m05-pentagon-clusters.md","sha256":"4bbccc53d419d1381c18850ef132d87f5a7a19a638aedebc2da8fa4929733a98"}],
+"atomic_claims":[
+{"claim_id":"claim:opg401-m05-connected-face-deletion","text":"Each of the thirteen unavoidable expanded faces has a nonempty connected deletion in a minimum obstruction.","status":"candidate"},
+{"claim_id":"claim:opg401-m05-short-cubic-cycle-facial","text":"Every all-cubic four- or five-cycle in a minimum obstruction is facial and has connected deletion.","status":"candidate"},
+{"claim_id":"claim:opg401-m05-cubic-carrier","text":"Each 122 face has an all-cubic pentagon on the other side of its weight-one edge.","status":"candidate"},
+{"claim_id":"claim:opg401-m05-double-ear-reduction","text":"Two 122 ears on a cubic pentagon give a reducible eleven-vertex region.","status":"candidate"},
+{"claim_id":"claim:opg401-m05-carrier-count","text":"The carrier map from 122 faces to all-cubic pentagons is injective, so F122<=F5c.","status":"candidate"}],
+"assumptions":["Structural claims assume a minimum-order obstruction in the frozen graph class.","The eleven-vertex construction preserves all outside colors and may choose the three exposed internal colors from their available lists.","Earlier proof inputs remain candidates, not admitted Evidence."],
+"risks":["An injective carrier map does not by itself contradict Euler's curvature sum.","The one-ear eight-vertex cluster is not covered by the double-ear reduction.","No mathematical runtime, compiler or verifier receipt is claimed."],
+"open_obligations":["obligation:opg401-z20-extension","obligation:opg401-root"],"failed_route_proposal":null,
+"source_refs":[
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"problem-library/records/canonical-problems.jsonl","revision":"88a42d5c35568268e15cda980a81919432d753dd","relation":"exact"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/records/obligation-graphs.jsonl","revision":"88a42d5c35568268e15cda980a81919432d753dd","relation":"exact"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/records/failed-routes.jsonl","revision":"88a42d5c35568268e15cda980a81919432d753dd","relation":"prior_art"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-c01-local-extension.md","revision":"88a42d5c35568268e15cda980a81919432d753dd","relation":"prior_art"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-c06-tight-recoloring.md","revision":"88a42d5c35568268e15cda980a81919432d753dd","relation":"prior_art"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-m01-critical-structure.md","revision":"88a42d5c35568268e15cda980a81919432d753dd","relation":"prior_art"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-m02-pentagon-122.md","revision":"88a42d5c35568268e15cda980a81919432d753dd","relation":"prior_art"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-m03-weighted-core.md","revision":"88a42d5c35568268e15cda980a81919432d753dd","relation":"prior_art"},
+{"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-m04-face-certificates.md","revision":"88a42d5c35568268e15cda980a81919432d753dd","relation":"prior_art"}],
+"requested_verification":["kernel_check","axiom_escape_audit","statement_faithfulness"],"verdict":"candidate_only","created_at":"2026-09-06T16:28:07.516979+00:00"
+}
