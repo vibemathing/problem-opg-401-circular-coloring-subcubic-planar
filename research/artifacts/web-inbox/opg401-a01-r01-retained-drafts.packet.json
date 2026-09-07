@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762563,
+    "node_id": "R_kgDOUP0SQw",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256": "76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256": "d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision": "5f2a09d712c9ccc6578f082de1ac66cbd4ff6a32",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg401-a01",
+  "route_id": "route:degree-two-extension-criterion-v1",
+  "graph_id": "graph:opg401-initial-v1",
+  "obligation_id": "obligation:opg401-root",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg401-a01-m01-critical-structure",
+    "issue_number": 4,
+    "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4",
+    "pull_request_number": null,
+    "pull_request_url": null
+  },
+  "objective": "Recover the eight pre-existing unpacketized drafts on the retained m01 branch without new mathematical derivation.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg401-a01-m02-separated-pentagon-draft",
+      "kind": "proof",
+      "locator": "research/artifacts/candidates/opg401-a01-m02-separated-pentagon-draft.md",
+      "sha256": "e65a9030ca46e694b006bc130785cce0d621672933e8e437cefcc9a1fde38268"
+    },
+    {
+      "candidate_id": "candidate:opg401-a01-m03-cubic-square-draft",
+      "kind": "proof",
+      "locator": "research/artifacts/candidates/opg401-a01-m03-cubic-square-draft.md",
+      "sha256": "2f1383f13bb8cbbb37be769998c80e6976371d1e1ca485386a817ebcc6194e88"
+    },
+    {
+      "candidate_id": "candidate:opg401-a01-m04-short-face-attachments-draft",
+      "kind": "proof",
+      "locator": "research/artifacts/candidates/opg401-a01-m04-short-face-attachments-draft.md",
+      "sha256": "fe83b6a0f2cc9bc70bb5655db098f870021b3f34c28ad053825eb018c08617b5"
+    },
+    {
+      "candidate_id": "candidate:opg401-a01-m05-dual-charge-certificates-draft",
+      "kind": "proof",
+      "locator": "research/artifacts/candidates/opg401-a01-m05-dual-charge-certificates-draft.md",
+      "sha256": "6d87c4b09af2104b53d54160b34b5afafa2f7ce4d46fa32f138dc5b156352ea5"
+    },
+    {
+      "candidate_id": "candidate:opg401-a01-m06-sharp-twenty-vertex-draft",
+      "kind": "proof",
+      "locator": "research/artifacts/candidates/opg401-a01-m06-sharp-twenty-vertex-draft.md",
+      "sha256": "dc6f6f8d33d6157005590af1794c38061506778cacdd3bc181a6df9295a04623"
+    },
+    {
+      "candidate_id": "candidate:opg401-a01-m07-four-odd-face-reduction-draft",
+      "kind": "proof",
+      "locator": "research/artifacts/candidates/opg401-a01-m07-four-odd-face-reduction-draft.md",
+      "sha256": "e0c87162ac56052bbcef80cb78b7eb685d5eec4091360f6c888a3871fc8ca548"
+    },
+    {
+      "candidate_id": "candidate:opg401-a01-m08-six-terminal-cut-structure-draft",
+      "kind": "proof",
+      "locator": "research/artifacts/candidates/opg401-a01-m08-six-terminal-cut-structure-draft.md",
+      "sha256": "eddd8cce0e3872fe9f18627488c5d9d36c38e4dc16d38a26003e42b110b4919f"
+    },
+    {
+      "candidate_id": "candidate:opg401-a01-m09-pentagonal-retraction-draft",
+      "kind": "proof",
+      "locator": "research/artifacts/candidates/opg401-a01-m09-pentagonal-retraction-draft.md",
+      "sha256": "797d79669261f4abae73f422da22aff11bc3dde4af5e9f66ff97816594bb5c58"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg401-m02-separated-pentagon-boundary",
+      "text": "Preserved draft: exact separated-degree-two pentagon boundary relation.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg401-m03-square-table",
+      "text": "Preserved draft: complete cubic-square fixed-boundary relation and failed matching replacement.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg401-m04-paired-pentagon-reduction",
+      "text": "Preserved draft: short-face attachment restrictions and coupled-pentagon reduction.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg401-m05-dual-charge-equivalence",
+      "text": "Preserved draft: centered dual-charge equivalence and finite cut-certificate interface.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg401-m06-sharp-lower-bound",
+      "text": "Preserved draft: explicit twenty-vertex sharpness witness, not a root counterexample.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg401-m07-four-odd-face-coloring",
+      "text": "Preserved draft: at-most-four-odd-face coloring argument with an explicit palette map.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg401-m08-pair-cut-degree",
+      "text": "Preserved draft: small pair-cut structure and diagnosed counterexample constructions.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg401-m09-six-terminal-pair-graph-bipartite",
+      "text": "Preserved draft: pentagonal retraction and a six-terminal signature restriction; triple cuts remain open.",
+      "status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "Original draft hypotheses and fixed-boundary quantifiers remain unchanged.",
+    "The source-note maps historical m02-m09 shorthand to their distinct -draft files."
+  ],
+  "risks": [
+    "This is byte-preserving transport, not mathematical verification or admission.",
+    "No mathematical enumeration, solver, Lean/SMT replay or verifier receipt is asserted.",
+    "Historical draft headers are preserved; this packet defines only the current transport transaction."
+  ],
+  "open_obligations": [
+    "obligation:opg401-z20-extension",
+    "obligation:opg401-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "5f2a09d712c9ccc6578f082de1ac66cbd4ff6a32",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "5f2a09d712c9ccc6578f082de1ac66cbd4ff6a32",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/records/failed-routes.jsonl",
+      "revision": "5f2a09d712c9ccc6578f082de1ac66cbd4ff6a32",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/candidates/opg401-a01-m01-critical-structure.md",
+      "revision": "5f2a09d712c9ccc6578f082de1ac66cbd4ff6a32",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/source-notes/opg401-transport-20260907/retained-tail.md",
+      "revision": "sha256:dd2e71dff636460cb14ce930d326f0650bcb5cc06aefaedaf6401d4c3ffc3e94",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/candidates/opg401-a01-m02-separated-pentagon-draft.md",
+      "revision": "474017b75fbb72a52a554248260b2d025fd86b6d",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/candidates/opg401-a01-m03-cubic-square-draft.md",
+      "revision": "474017b75fbb72a52a554248260b2d025fd86b6d",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/candidates/opg401-a01-m04-short-face-attachments-draft.md",
+      "revision": "474017b75fbb72a52a554248260b2d025fd86b6d",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/candidates/opg401-a01-m05-dual-charge-certificates-draft.md",
+      "revision": "474017b75fbb72a52a554248260b2d025fd86b6d",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/candidates/opg401-a01-m06-sharp-twenty-vertex-draft.md",
+      "revision": "474017b75fbb72a52a554248260b2d025fd86b6d",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/candidates/opg401-a01-m07-four-odd-face-reduction-draft.md",
+      "revision": "474017b75fbb72a52a554248260b2d025fd86b6d",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/candidates/opg401-a01-m08-six-terminal-cut-structure-draft.md",
+      "revision": "474017b75fbb72a52a554248260b2d025fd86b6d",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/candidates/opg401-a01-m09-pentagonal-retraction-draft.md",
+      "revision": "474017b75fbb72a52a554248260b2d025fd86b6d",
+      "relation": "prior_art"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-07T00:50:50Z"
+}
