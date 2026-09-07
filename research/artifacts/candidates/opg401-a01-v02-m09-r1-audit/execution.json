@@ -1,0 +1,54 @@
+{
+  "verdict": "candidate_only",
+  "execution": "executed_frontend_bounded",
+  "command": [
+    "python3",
+    "-I",
+    "-S",
+    "palette_check.py"
+  ],
+  "python_version": "3.13.5",
+  "implementation": "CPython",
+  "python_binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "limits": {
+    "wall_seconds": 10,
+    "cpu_seconds": 5,
+    "address_space_bytes": 134217728,
+    "file_bytes": 65536,
+    "output_bytes": 65536,
+    "threads": 1,
+    "retries": 0
+  },
+  "exit_status": 0,
+  "wall_seconds_observed": 0.042785,
+  "stdout": "{\"directed_edges\": 30, \"boundary_maps\": 3125, \"automorphisms\": 10, \"warning_trials\": 8000, \"warning_completions\": 0}",
+  "stdout_sha256": "fa115b33b8026d9d575f29648350d2f967f3ec10f0d84cf1076011be3f1bd418",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "files": [
+    {
+      "name": "input.json",
+      "bytes": 160,
+      "sha256": "ec4e26f762f324d5f209dbf35157e1a406072fa2759e9ef3548dc7d49ca05d27"
+    },
+    {
+      "name": "palette_check.py",
+      "bytes": 3468,
+      "sha256": "b2974cfcbe0718226047806b3ec1c3c0ed2dd11f8aeac9d9e092f4ac3df6651b"
+    },
+    {
+      "name": "run.py",
+      "bytes": 2535,
+      "sha256": "c17294f5b1d71d13608f7cff81174bd9a843b4a845857eb6615c100fe9b1cb6b"
+    },
+    {
+      "name": "palette-audit.json",
+      "bytes": 1017,
+      "sha256": "da276afb344f1fc09ea5fd4dc79f42db8e85bae3e36f87021902bf06cd23314b"
+    }
+  ],
+  "route": "CPU exact stdlib; isolated no-site runtime smoke passed in v01",
+  "repository_compute_plan": "absent at frozen main; not invoked",
+  "repository_verifier_adapter": "not_invoked",
+  "trusted_verifier_receipt": false,
+  "scope": "finite palettes only; plane-patch theorem has a separate hand proof"
+}
