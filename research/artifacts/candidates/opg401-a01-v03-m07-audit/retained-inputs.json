@@ -1,0 +1,73 @@
+{
+  "schema": "opg401-retained-candidate-inputs-v1",
+  "verdict": "candidate_only",
+  "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "frozen_revision": "f872b4f248707d4fedcc06021974bcb9c1a89c5d",
+  "current_main_read": "7928d42a5c57e0c94bbc694b1ee2efc63836ee39",
+  "branch": "web/attempt-opg401-a01-v03-m07-audit",
+  "files": [
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/audit.py",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/exact_color.cpp",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/execution.json",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/fixtures.json",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/gadget-search.json",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/mutations.json",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/processes.json",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/proof.md",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/run.py",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/stdlib/check.py",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/stdlib/extension-table.csv",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/stdlib/input.json",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/stdlib/residuals.json",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/stdlib/run.py",
+      "role": "retained_candidate_input"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v03-m07-audit/tables.json",
+      "role": "retained_candidate_input"
+    }
+  ],
+  "treatment": "All fifteen pre-existing candidate files are preserved at their original paths; this same branch is reused, not replaced. The new extra-port proof and checker have separate paths and actual new execution records. The existing execution records are historical candidate observations, not new executions or trusted receipts.",
+  "content_binding": "The immutable Git commit and complete repository-relative paths bind the retained bytes. Their individual SHA-256 values are not asserted to have been recomputed in this finishing cycle. The manifest itself and every newly prepared file have directly computed SHA-256 hashes.",
+  "mathematical_status": "M07 audit candidate inputs; no entire residual row closed; no root or local obligation admission"
+}
