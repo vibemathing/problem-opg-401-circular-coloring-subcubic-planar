@@ -1,0 +1,100 @@
+{
+  "verdict": "candidate_only",
+  "execution": "executed_frontend_bounded",
+  "python_version": "3.13.5",
+  "implementation": "CPython",
+  "python_binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "limits": {
+    "wall_seconds_per_process": 10,
+    "cpu_seconds_per_process": 5,
+    "address_space_bytes": 134217728,
+    "file_bytes": 65536,
+    "stdout_bytes": 65536,
+    "threads": 1,
+    "retries": 0
+  },
+  "route": "CPU exact integer stdlib; no GPU, CAS, SAT or Lean",
+  "repository_compute_plan": "not_present_at_frozen_main; no planner run claimed",
+  "repository_verifier_adapter": "not_invoked",
+  "trust_domain": "candidate_generator",
+  "runs": [
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-S",
+        "-c",
+        "import json,hashlib; assert json.loads('{\"x\":7}')[\"x\"]==7; assert hashlib.sha256(b'abc').hexdigest()=='ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad'; print('stdlib-smoke-ok')"
+      ],
+      "exit_status": 0,
+      "wall_seconds_observed": 0.018285,
+      "stdout_sha256": "eb7df057eff6de1d153a84a61c43513516b21e2eff3a22b4aa4b179d4d2c43f9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "stdlib-smoke-ok"
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-S",
+        "enumerate.py",
+        "input.json",
+        "certificate.json"
+      ],
+      "exit_status": 0,
+      "wall_seconds_observed": 0.018576,
+      "stdout_sha256": "fbfff31d7d2af35f2067f789e7b7d7bdf5ce6d284685ef6f9b1486a6698b7865",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"pairs\": 400, \"candidate_colors_examined\": 8000, \"certificate_bytes\": 5443}"
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-S",
+        "check.py",
+        "input.json",
+        "certificate.json",
+        "audit.json"
+      ],
+      "exit_status": 0,
+      "wall_seconds_observed": 0.028844,
+      "stdout_sha256": "acae41d1e226969c1155526a3bc60654bf73ea8a9b58a974f7792e278daa276f",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"pairs_checked\": 400, \"formula_disagreements\": 0, \"mutations_killed\": 12, \"nonempty_pairs\": 260}"
+    }
+  ],
+  "files": [
+    {
+      "name": "input.json",
+      "bytes": 182,
+      "sha256": "2e85a14e34a2be103ac4e9a0be90561446ab624024e6214f8157d0812ab28024"
+    },
+    {
+      "name": "enumerate.py",
+      "bytes": 1521,
+      "sha256": "098dcd037737670e45126883866a6d3e8e17648f6193ca1ee6f5440d647dda49"
+    },
+    {
+      "name": "check.py",
+      "bytes": 6952,
+      "sha256": "8156096dc3139c7786e25ec1ebfa4b78ac133e8c9b69d8c291558ff9c78bf945"
+    },
+    {
+      "name": "run.py",
+      "bytes": 3698,
+      "sha256": "4ae61db5599b1a87c0f1cb3a0870ac8064d20cd030ca77d6f7a8d91c227bab41"
+    },
+    {
+      "name": "certificate.json",
+      "bytes": 5443,
+      "sha256": "9e78a1668b638d72d49a47e33af9a2752d6bf65d6fd2559658e8177fd8474d53"
+    },
+    {
+      "name": "audit.json",
+      "bytes": 2685,
+      "sha256": "f5ab89689fda29125dcb8ce4a0991bb9cc80f8742db436828a80a5ce93609a75"
+    }
+  ],
+  "trusted_verifier_receipt": false
+}
