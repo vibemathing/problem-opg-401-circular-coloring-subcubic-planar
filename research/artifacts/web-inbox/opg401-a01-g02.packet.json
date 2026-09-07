@@ -26,8 +26,8 @@
     "branch": "web/attempt-opg401-a01-c09-k23-boundary",
     "issue_number": 4,
     "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4",
-    "pull_request_number": null,
-    "pull_request_url": null
+    "pull_request_number": 21,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/21"
   },
   "objective": "Transport the previously prepared g02 draft and its historical provenance without extending the mathematics.",
   "candidate_artifacts": [
