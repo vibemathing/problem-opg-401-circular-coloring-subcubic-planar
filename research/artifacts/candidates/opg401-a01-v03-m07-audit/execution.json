@@ -1,0 +1,129 @@
+{
+  "verdict": "candidate_only",
+  "status": "executed_frontend_bounded",
+  "started_at": "2026-09-07T07:17:55.273018+00:00",
+  "python_version": "3.13.5",
+  "python_binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "compiler_binary_sha256": "6b3696e4dcb85e1c949c732a02befa50e3983ecf94ce7e8e58d9d503b954b79d",
+  "compiled_candidate_binary_sha256": "18e1f6cd38ffb8b38be97ea426f445de4a32c693a365707c247f261fec4f049e",
+  "route": "CPU exact integers; no CAS, SAT, GPU or Lean",
+  "trust_role": "candidate_generator",
+  "repository_verifier_adapter": "not_invoked",
+  "producer_limits": {
+    "max_retained_text_files": 9,
+    "max_retained_text_bytes": 2097152
+  },
+  "runs": [
+    {
+      "command": [
+        "g++",
+        "--version"
+      ],
+      "exit_status": 0,
+      "wall_seconds": 0.024714,
+      "limits": {
+        "cpu_seconds": 2,
+        "wall_seconds": 5,
+        "address_space_bytes": 134217728,
+        "file_bytes": 2097152,
+        "stdout_stderr_bytes_each": 65536,
+        "threads": 1,
+        "retries": 0
+      },
+      "stdout_sha256": "5f6798e87440f1e8b88bf6822c33bebe434f83374640a7f8ba967902ee1ea098",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "g++ (Debian 14.2.0-19) 14.2.0\nCopyright (C) 2024 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
+    },
+    {
+      "command": [
+        "g++",
+        "-std=c++20",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "exact_color.cpp",
+        "-o",
+        "exact_color"
+      ],
+      "exit_status": 0,
+      "wall_seconds": 1.76312,
+      "limits": {
+        "cpu_seconds": 12,
+        "wall_seconds": 15,
+        "address_space_bytes": 536870912,
+        "file_bytes": 2097152,
+        "stdout_stderr_bytes_each": 65536,
+        "threads": 1,
+        "retries": 0
+      },
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "-S",
+        "audit.py"
+      ],
+      "exit_status": 0,
+      "wall_seconds": 11.642122,
+      "limits": {
+        "cpu_seconds": 30,
+        "wall_seconds": 40,
+        "address_space_bytes": 268435456,
+        "file_bytes": 2097152,
+        "stdout_stderr_bytes_each": 65536,
+        "threads": 1,
+        "retries": 0
+      },
+      "stdout_sha256": "813865d4b1a791543cf9a8e09d4701429974fdad04aea54065a381abdfa312f0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"cases\": 4400, \"residuals\": 32, \"m07_nine_bad\": 25, \"mutations\": 12, \"gadget_probes\": 272, \"unconditional_classes_closed\": []}"
+    }
+  ],
+  "files": [
+    {
+      "path": "fixtures.json",
+      "bytes": 1400,
+      "sha256": "55fc25b851a8865dcf5f9dd75038b84ad2abb81f5623f87287f17924ca9e17e3"
+    },
+    {
+      "path": "exact_color.cpp",
+      "bytes": 3068,
+      "sha256": "5615686a57561019e3191dc9d794faf482902af0c608444f94b7da17b765c511"
+    },
+    {
+      "path": "audit.py",
+      "bytes": 18883,
+      "sha256": "ac7c608d533d3cca84dcbe57aa41cfa922148c83e96ae39d1113808498921d71"
+    },
+    {
+      "path": "run.py",
+      "bytes": 3223,
+      "sha256": "29ca6a5aeebccded8178191c7b3aaf82c1a35bc9a723c514599ef1a73cff2172"
+    },
+    {
+      "path": "tables.json",
+      "bytes": 8402,
+      "sha256": "c981bd02106e7cb95597b4e5dc02364bdce19d46ce3a681ad2cb558af22feac3"
+    },
+    {
+      "path": "mutations.json",
+      "bytes": 1829,
+      "sha256": "f358bc67e2b5949ee9378244b2577bca3943767766dc4c94f3bf4d5effbd269b"
+    },
+    {
+      "path": "gadget-search.json",
+      "bytes": 17808,
+      "sha256": "80a56fc31587ea0867168673d16fd7490d1cc8dbd5f9e08447eeb601edb91880"
+    },
+    {
+      "path": "processes.json",
+      "bytes": 1932,
+      "sha256": "9f87dfa0db8e7f426d205fb19b5f08399d99c7ff8567e41182b19fb331bdfc3c"
+    }
+  ]
+}
