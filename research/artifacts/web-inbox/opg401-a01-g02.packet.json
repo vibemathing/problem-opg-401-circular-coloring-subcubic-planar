@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.1.0",
+  "channel": "chatgpt-web-github-issue-pr-writer",
+  "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity": {
+    "binding_state": "verified",
+    "database_id": 1358762563,
+    "node_id": "R_kgDOUP0SQw",
+    "default_branch": "main"
+  },
+  "problem_id": "problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256": "76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256": "d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision": "5ba9f89a5c5272fd78e3e6e7a8a13e22d0bf0c42",
+  "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id": "attempt:web-20260906-opg401-a01",
+  "route_id": "route:degree-two-extension-criterion-v1",
+  "graph_id": "graph:opg401-initial-v1",
+  "obligation_id": "obligation:opg401-root",
+  "generator": {
+    "principal": "chatgpt-web-github",
+    "model_label": "GPT-6 Astra Pro",
+    "model_fingerprint_status": "unverified"
+  },
+  "transport": {
+    "branch": "web/attempt-opg401-a01-c09-k23-boundary",
+    "issue_number": 4,
+    "issue_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4",
+    "pull_request_number": 21,
+    "pull_request_url": "https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/21"
+  },
+  "objective": "Transport the previously prepared g02 draft and its historical provenance without extending the mathematics.",
+  "candidate_artifacts": [
+    {
+      "candidate_id": "candidate:opg401-a01-g02-rotation-count",
+      "kind": "proof",
+      "locator": "research/artifacts/candidates/opg401-a01-g02-rotation-count.md",
+      "sha256": "a01d293b7fcb9fa508fa61e36e9211d07d4b430b637c56e2a299d003d5dcdb42"
+    }
+  ],
+  "atomic_claims": [
+    {
+      "claim_id": "claim:opg401-g02-balanced-product",
+      "text": "The preserved draft proposes P(d)=(7-floor(d/2))*(7-ceil(d/2)) as the exact maximum two-list product under a common component rotation with both poles zero.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg401-g02-sharp-28",
+      "text": "The preserved draft proposes a sharp guarantee of 28 internal assignments for this specified equal-pole K2,3 construction.",
+      "status": "candidate"
+    },
+    {
+      "claim_id": "claim:opg401-g02-palette-boundary",
+      "text": "For 2q<=p<3q the preserved draft proposes the condition 2*(p-2q)>=floor(p/2) for its universal component-rotation extension promise; it distinguishes prescribed palettes from unrestricted colorability.",
+      "status": "candidate"
+    }
+  ],
+  "assumptions": [
+    "The g01 configuration and its planar attachment hypotheses are retained.",
+    "Both pole colors are fixed to zero in the counting statement.",
+    "The parameter generalization is separate from the frozen (20,7) root."
+  ],
+  "risks": [
+    "This is transport of an existing unverified proof draft, not new research or mathematical admission.",
+    "The preparation-time header and legacy checkpoint are historical; this packet supplies the current transport binding.",
+    "No mathematical enumeration, Lean/SMT replay, compiled source or verifier receipt exists for this draft."
+  ],
+  "open_obligations": [
+    "obligation:opg401-z20-extension",
+    "obligation:opg401-root"
+  ],
+  "failed_route_proposal": null,
+  "source_refs": [
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "problem-library/records/canonical-problems.jsonl",
+      "revision": "5ba9f89a5c5272fd78e3e6e7a8a13e22d0bf0c42",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/records/obligation-graphs.jsonl",
+      "revision": "5ba9f89a5c5272fd78e3e6e7a8a13e22d0bf0c42",
+      "relation": "exact"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/records/failed-routes.jsonl",
+      "revision": "5ba9f89a5c5272fd78e3e6e7a8a13e22d0bf0c42",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/candidates/opg401-a01-g01-planar-k23.md",
+      "revision": "5ba9f89a5c5272fd78e3e6e7a8a13e22d0bf0c42",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/source-notes/opg401-transport-20260907/intake.md",
+      "revision": "sha256:7fb41c13412b1f72bce30877518d672da29de3e98a751e1cdcbf34b30581c0ac",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/source-notes/opg401-transport-20260907/legacy-continuation-checkpoint.json",
+      "revision": "sha256:8bb9271137d0f297b7f67636f68fe6db2591cbc028f8019f322d738d1937f9d3",
+      "relation": "prior_art"
+    },
+    {
+      "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+      "path": "research/artifacts/source-notes/opg401-transport-20260907/legacy-artifact-manifest.json",
+      "revision": "sha256:c6dcc318b1167a32107a77a54a12bb37f5fed80cd632ec3425e443887fc2ee2a",
+      "relation": "prior_art"
+    }
+  ],
+  "requested_verification": [
+    "kernel_check",
+    "axiom_escape_audit",
+    "statement_faithfulness"
+  ],
+  "verdict": "candidate_only",
+  "created_at": "2026-09-07T00:33:37Z"
+}
