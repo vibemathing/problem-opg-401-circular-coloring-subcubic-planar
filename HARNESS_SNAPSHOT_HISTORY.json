@@ -13,6 +13,13 @@
       "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
       "source_manifest_sha256": "27a22779f4ea8418115002a4a180553b0f23425b69e4deb76f2bd6ae893b2993",
       "tree_sha256": "9abead9d8d799363d0e2d6d2bba8082dc184db524cf2c80eadb068b92f2d05fd"
+    },
+    {
+      "harness_snapshot_sha256": "c3a11c6dbaa86dcccbc807df6f8dfe704f083d46e73a5f7603d384379a72ca42",
+      "harness_version": "1.2.4",
+      "importer_policy_sha256": "a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+      "source_manifest_sha256": "fedd664f1ac16c5232eb05076b73f2bab566ed672840e7f2af851c77253813b3",
+      "tree_sha256": "ff5572cde6f4f228f3de543f25deabd514929c5e2ed5e2dc1d87564971a3a544"
     }
   ],
   "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
