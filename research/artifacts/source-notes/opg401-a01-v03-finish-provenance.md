@@ -1,0 +1,9 @@
+# V03 finishing provenance
+
+Verdict: candidate_only. The reused branch was read at 33ddea0b0c56b186b65598aff4351ccd967ce65a, based on main 7928d42a5c57e0c94bbc694b1ee2efc63836ee39. Its original fifteen-file M07 audit and subsequent extra-port proof are retained, not represented as newly verified results.
+
+Four unfinished opaque replay-capsule chunks (payload-01.txt through payload-04.txt) were present, while their commit message described a twelve-chunk object. This is not a complete readable research artifact. The chunks remain in immutable branch history at the read revision and are excluded from the final candidate diff; no protected ref is rewritten. The older local replay archive has NOT thereby been declared fully transported. Its distinct plaintext replay material remains a separate historical pending item, not mathematical input to the new finite theorem.
+
+The missing extra-port/replacement-screen.json was reconstructed with the exact original engine SHA-256 2f1d5b142820440bc07e4af6adfd24da8677260e3fe9a5faede0cc681c13a789. Its recovered bytes are 11236 and SHA-256 c2188eca1d7d617eae62196d536e8187e945d15c56e173ce9130bf7bb1949d92, equal to the retained historical execution declaration. The stored extra-port/input.json has one fewer final newline byte than that historical declaration; restoring the newline is a byte-transport repair, not a new verifier receipt. Historical execution records themselves are not edited.
+
+The new small-replacement census and full-coloring orbit controls are in a separate seven-point subdirectory. They are bounded candidate-generator computations. Neither a transport check nor a finite palette control closes either admitted obligation. All C1-C4 classes remain open. V01's pending statement comparison and admission request remain pending; no trusted verifier is self-appointed.
