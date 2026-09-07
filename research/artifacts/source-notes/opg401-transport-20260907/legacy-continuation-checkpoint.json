@@ -1,0 +1,26 @@
+{
+  "verdict": "candidate_only",
+  "state": "nonterminal",
+  "last_confirmed_main": "ae202fd206b64b875d0c2ea75e272d0761469af1",
+  "continuation_issue": 4,
+  "last_confirmed_merged_pr": 13,
+  "last_confirmed_checked_head": "2fd190c51a4bac749b648ba185366e22a17e2079",
+  "last_confirmed_run": 34023313369,
+  "g01_candidate_sha256": "f352ab0a3e464b448bb1d57c8770f40da96eb2c21b95a7ff0015f781565ae16e",
+  "f01_pr": 14,
+  "f01_branch": "web/attempt-opg401-a01-f01-extension-bijection",
+  "f01_candidate_sha256": "2963b681e2f49202b05a135f5651bb4ab4438aa8859a959308a64ece028c2d56",
+  "f01_final_checks": "not_confirmed_in_latest_readable_state",
+  "f01_merge": "not_claimed",
+  "g02": {
+    "status": "offline_draft_no_packet",
+    "sha256": "a01d293b7fcb9fa508fa61e36e9211d07d4b430b637c56e2a299d003d5dcdb42"
+  },
+  "best_verified_result": "none",
+  "best_verified_candidate": "none",
+  "open_obligations": [
+    "obligation:opg401-z20-extension",
+    "obligation:opg401-root"
+  ],
+  "next_action": "Recover a readable current PR14 head/check receipt; do not merge on inferred status. Then fresh-read main and compare the prepared optimal-28/parameter-boundary draft before opening its own unique cycle."
+}

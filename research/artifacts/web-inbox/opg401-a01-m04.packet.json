@@ -1,0 +1,41 @@
+{
+  "schema_version":"1.1.0",
+  "channel":"chatgpt-web-github-issue-pr-writer",
+  "repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "repository_identity":{"binding_state":"verified","database_id":1358762563,"node_id":"R_kgDOUP0SQw","default_branch":"main"},
+  "problem_id":"problem:opg-401-circular-coloring-subcubic-planar",
+  "problem_contract_sha256":"76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "harness_snapshot_sha256":"d8a72a1f2c9fecea64d71b8a92949d9b6693796a84bb450390d952f26d0a6e2f",
+  "base_revision":"dd58ab97b504c3e594b7c016fdd13d3c47c0819a",
+  "importer_policy_sha256":"a7650a8ba5be3fef370914b24a49b1118f57dc12f41980f21b11ef2b0a8267c1",
+  "attempt_id":"attempt:web-20260906-opg401-a01",
+  "route_id":"route:degree-two-extension-criterion-v1",
+  "graph_id":"graph:opg401-initial-v1",
+  "obligation_id":"obligation:opg401-root",
+  "generator":{"principal":"chatgpt-web-github","model_label":"GPT-6 Astra Pro","model_fingerprint_status":"unverified"},
+  "transport":{"branch":"web/attempt-opg401-a01-m04-face-certificates","issue_number":4,"issue_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/issues/4","pull_request_number":18,"pull_request_url":"https://github.com/vibemathing/problem-opg-401-circular-coloring-subcubic-planar/pull/18"},
+  "objective":"Give complete certifying fixed-boundary relations for all thirteen unavoidable face types, including closed forms for cubic four- and five-faces.",
+  "candidate_artifacts":[{"candidate_id":"candidate:opg401-a01-m04-face-certificates","kind":"proof","locator":"research/artifacts/candidates/opg401-a01-m04-face-certificates.md","sha256":"8e4d7b855f04cee688b963f6defde79ae0f6119799b182b5f82ffee5363aa853"}],
+  "atomic_claims":[
+    {"claim_id":"claim:opg401-m04-interval-split","text":"A weighted cyclic boundary with one seven-color list per branch is equivalent to the explicitly partitioned integer difference systems.","status":"candidate"},
+    {"claim_id":"claim:opg401-m04-difference-criterion","text":"Integer offsets in [0,6] exist exactly when both full-cycle bounds and all proper-segment bounds hold.","status":"candidate"},
+    {"claim_id":"claim:opg401-m04-cubic-four-face","text":"A cubic four-face extends exactly when boundary increments sum to 40, are all in 1..19, and every adjacent sum is in 8..32.","status":"candidate"},
+    {"claim_id":"claim:opg401-m04-cubic-five-face","text":"A cubic five-face extends exactly in the two stated increment regimes with total 40 or 60.","status":"candidate"},
+    {"claim_id":"claim:opg401-m04-thirteen-type-certificates","text":"Each of the thirteen unavoidable weighted face types has at most four interval systems, yielding complete positive or negative fixed-boundary certificates.","status":"candidate"}
+  ],
+  "assumptions":["Each branch vertex has exactly one fixed outside-color constraint and all other region vertices lie internally on the stated threads.","The outside coloring is proper and preserved; coincident outside neighbors retain equal prescribed colors.","All arithmetic and interval branches use the fixed Z20 definition; no disconnected difference set is convexified."],
+  "risks":["Boundary feasibility is not a proof that a favorable outside coloring exists in a minimum obstruction.","All interval cases must be represented in a negative certificate.","No program execution, graph enumeration, kernel check or verifier receipt is claimed."],
+  "open_obligations":["obligation:opg401-z20-extension","obligation:opg401-root"],
+  "failed_route_proposal":{"route_fingerprint":"88f34995e4ee5913c2437eeaa3092ac2484d654e3a3c7a5bd259ff6c5da5d9c5","failure_class":"counterexample","blocker":"Correct total winding and unequal consecutive outside colors do not suffice for a cubic four-face: (0,1,0,19) has increments (1,19,19,1), total 40, but a two-edge sum 38 exceeds 32.","evidence_locators":["research/artifacts/candidates/opg401-a01-m04-face-certificates.md#6-explicit-attacks-and-hand-checkable-certificates"],"next_obligation":"obligation:opg401-root"},
+  "source_refs":[
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"problem-library/records/canonical-problems.jsonl","revision":"dd58ab97b504c3e594b7c016fdd13d3c47c0819a","relation":"exact"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/records/obligation-graphs.jsonl","revision":"dd58ab97b504c3e594b7c016fdd13d3c47c0819a","relation":"exact"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/records/failed-routes.jsonl","revision":"dd58ab97b504c3e594b7c016fdd13d3c47c0819a","relation":"prior_art"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-c01-local-extension.md","revision":"dd58ab97b504c3e594b7c016fdd13d3c47c0819a","relation":"prior_art"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-c03-path-sumsets.md","revision":"dd58ab97b504c3e594b7c016fdd13d3c47c0819a","relation":"prior_art"},
+    {"repository":"vibemathing/problem-opg-401-circular-coloring-subcubic-planar","path":"research/artifacts/candidates/opg401-a01-m03-weighted-core.md","revision":"dd58ab97b504c3e594b7c016fdd13d3c47c0819a","relation":"prior_art"}
+  ],
+  "requested_verification":["kernel_check","axiom_escape_audit","statement_faithfulness"],
+  "verdict":"candidate_only",
+  "created_at":"2026-09-06T16:16:56.843579+00:00"
+}
