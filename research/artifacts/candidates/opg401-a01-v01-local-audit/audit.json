@@ -1,0 +1,174 @@
+{
+  "verdict": "candidate_only",
+  "pairs_checked": 400,
+  "pair_color_memberships_checked": 8000,
+  "formula_disagreements": 0,
+  "definition_comparisons": 400,
+  "swap_checks": 400,
+  "reflection_checks": 400,
+  "translation_checks": 8000,
+  "inverse_symmetry_checks": 400,
+  "equal_pairs": 20,
+  "antipodal_pairs": 20,
+  "endpoint_checks": 80,
+  "nonempty_pairs": 260,
+  "total_common_color_occurrences": 980,
+  "normalized_counts": [
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0,
+    0,
+    0,
+    0
+  ],
+  "mutations_killed": 12,
+  "mutation_witnesses": [
+    {
+      "mutation": "exclude_7",
+      "pair": [
+        0,
+        0
+      ],
+      "expected": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "mutant": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "mutation": "exclude_13",
+      "pair": [
+        0,
+        0
+      ],
+      "expected": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "mutant": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "mutation": "natural_subtraction_truncates",
+      "pair": [
+        0,
+        14
+      ],
+      "expected": [
+        7
+      ],
+      "mutant": []
+    },
+    {
+      "mutation": "omit_color_19",
+      "pair": [
+        6,
+        6
+      ],
+      "expected": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "mutant": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "mutation": "missing_inclusive_plus_one",
+      "pair": [
+        0,
+        0
+      ],
+      "expected": 7,
+      "mutant": 6
+    },
+    {
+      "mutation": "directed_residue_as_distance",
+      "pair": [
+        0,
+        14
+      ],
+      "expected": 1,
+      "mutant": 0
+    },
+    {
+      "mutation": "linear_abs_as_distance",
+      "pair": [
+        0,
+        14
+      ],
+      "expected": 1,
+      "mutant": 0
+    },
+    {
+      "mutation": "wrong_circumference_19",
+      "pair": [
+        0,
+        13
+      ],
+      "expected": 0,
+      "mutant": 1
+    },
+    {
+      "mutation": "threshold_le_7",
+      "pair": [
+        0,
+        7
+      ],
+      "expected": false,
+      "mutant": true
+    },
+    {
+      "mutation": "certificate_flip_bit",
+      "rejected": true
+    },
+    {
+      "mutation": "certificate_remove_row",
+      "rejected": true
+    },
+    {
+      "mutation": "certificate_duplicate_row",
+      "rejected": true
+    }
+  ],
+  "c5_fixed_boundary_and_full_coloring": "pass",
+  "trusted_verifier_receipt": false
+}
