@@ -1,0 +1,21 @@
+{
+  "verdict": "candidate_only",
+  "stage": "frontend_stdlib_smoke",
+  "mathematical_enumeration_started": false,
+  "diagnostic_command": [
+    "python3",
+    "-c",
+    "import json,hashlib; print(\"stdlib-smoke-ok\")"
+  ],
+  "exit_status": -9,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "limits": {
+    "wall_seconds": 10,
+    "cpu_seconds": 5,
+    "address_space_bytes": 134217728
+  },
+  "initial_runner_sha256": "7303e2ac73b63ff9fdceb5408869f36412ed744eb2286fa4f798cd3d46089071",
+  "cause": "process killed under bounded startup; exact cause not determined",
+  "revision": "use -I -S to disable site initialization and isolate standard library"
+}
