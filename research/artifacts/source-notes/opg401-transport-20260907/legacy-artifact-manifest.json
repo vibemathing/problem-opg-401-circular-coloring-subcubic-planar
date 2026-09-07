@@ -1,0 +1,18 @@
+{
+  "g01.md": {
+    "bytes": 9692,
+    "sha256": "f352ab0a3e464b448bb1d57c8770f40da96eb2c21b95a7ff0015f781565ae16e"
+  },
+  "f01.md": {
+    "bytes": 10410,
+    "sha256": "2963b681e2f49202b05a135f5651bb4ab4438aa8859a959308a64ece028c2d56"
+  },
+  "g02-draft.md": {
+    "bytes": 3979,
+    "sha256": "a01d293b7fcb9fa508fa61e36e9211d07d4b430b637c56e2a299d003d5dcdb42"
+  },
+  "continuation-checkpoint.json": {
+    "bytes": 1198,
+    "sha256": "8bb9271137d0f297b7f67636f68fe6db2591cbc028f8019f322d738d1937f9d3"
+  }
+}
