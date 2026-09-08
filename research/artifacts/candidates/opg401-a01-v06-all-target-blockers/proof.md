@@ -222,9 +222,8 @@ This proves an explicit forall-f-exists-witness statement on the given domain.
 
 In A take(w,y,S)=(8,1,2); in B take(15,4,5). In BOTH fixtures their original
 colors are(6,13,0). The first two changes are singleton reflections about
-axes9 and3, computed on the actual current coloring. The fixed separator has
-colors1,9,15,16; in fact every vertex outside the three-vertex support stays
-fixed throughout. These singleton reflections become possible in that ORDER.
+axes9 and3, computed on the actual current coloring. The fixed separator colors are1,9,15,16 in A and1,9,14,16 in B; every
+vertex outside the three-vertex support stays fixed throughout. These singleton reflections become possible in that ORDER.
 The original all-target pivot failed because it allowed only ONE preparatory
 reflection, not because these colorings were unrepairable.
 
