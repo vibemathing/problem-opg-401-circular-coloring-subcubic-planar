@@ -1,0 +1,56 @@
+{
+  "schema": "opg401-candidate-execution-v1",
+  "verdict": "candidate_only",
+  "trust_domain": "candidate_generator",
+  "command": [
+    "python3",
+    "-I",
+    "-S",
+    "audit.py"
+  ],
+  "python_version": "3.13.5",
+  "implementation": "CPython",
+  "python_binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "limits": {
+    "wall_seconds": 30,
+    "cpu_seconds": 25,
+    "memory_bytes": 402653184,
+    "file_bytes": 2097152,
+    "combined_output_bytes": 65536,
+    "threads": 1,
+    "retries": 0
+  },
+  "wall_seconds": 0.827394,
+  "exit_status": 0,
+  "timed_out": false,
+  "output_within_budget": true,
+  "stdout_sha256": "a4b3d4a47a134b15ee4fe65b3835b8e166fe0ad32f14fd5b1f1c0940e4acf02e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "{\"axis_failures\": 2060, \"certificate_bytes\": 22473, \"fixtures_with_negation\": 4, \"mutations_detected\": 14, \"negative_O_targets\": 57, \"path_failures\": 162, \"positive_O_targets\": 103, \"scalar_failures_checked\": 4120, \"target_rows\": 103, \"verdict\": \"candidate_only\", \"zero_failures\": 1898}\n",
+  "stderr_bytes": 0,
+  "files": [
+    {
+      "path": "input.json",
+      "bytes": 406,
+      "sha256": "be4bb945ca838538ea9ac8adf6cfa0a868d8d1497937e3d21a53ed17a882b3bc"
+    },
+    {
+      "path": "audit.py",
+      "bytes": 13475,
+      "sha256": "edb3ee6722f4296854c82d317242451dc059fbbeece1d4333e23fe3273983375"
+    },
+    {
+      "path": "run.py",
+      "bytes": 2753,
+      "sha256": "d3428b3b7454ec7b74bd5086626407fbb6cc9794ee0a5d0739a009446c7d4c57"
+    },
+    {
+      "path": "certificate.json",
+      "bytes": 22473,
+      "sha256": "8e0511ac4eabd5e08c92789ce56906af3ff59d8638019fced0e979385d6795b8"
+    }
+  ],
+  "prior_control_correction": "An exploratory assertion assumed every truncated failure path is invalid. A truncation may still end at a different forbidden vertex. The final mutation selects a truncation actually invalid under the scalar verifier. No mathematical claim was changed.",
+  "trusted_verifier_run": null,
+  "admission_run": null
+}
