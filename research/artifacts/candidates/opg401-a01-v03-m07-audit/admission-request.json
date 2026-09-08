@@ -1,0 +1,81 @@
+{
+  "schema": "opg401-candidate-admission-request-v1",
+  "verdict": "candidate_only",
+  "status": "pending_qualified_verifier_and_formalization",
+  "repository": "vibemathing/problem-opg-401-circular-coloring-subcubic-planar",
+  "revision": "7928d42a5c57e0c94bbc694b1ee2efc63836ee39",
+  "attempt_id": "attempt:web-20260906-opg401-a01",
+  "route_id": "route:degree-two-extension-criterion-v1",
+  "graph_id": "graph:opg401-initial-v1",
+  "obligation_id": "obligation:opg401-z20-extension",
+  "problem_contract_sha256": "76b2207954d4831261d0a61359a19e803cf8d913301756673c4c5ab962d8c8d6",
+  "obligation_statement_sha256": "16533194e20493e83312edbc99b93714f07282d4e65bb58c4cee1c734fa7594e",
+  "sources": [
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v01-local-audit/proof.md",
+      "sha256": "b7aeabb37c0e358cfd6531e19c8cea3d161856b4da86524f95986a225b3d326a"
+    },
+    {
+      "path": "research/artifacts/candidates/opg401-a01-v01-local-audit/certificate.json",
+      "sha256": "9e78a1668b638d72d49a47e33af9a2752d6bf65d6fd2559658e8177fd8474d53"
+    },
+    {
+      "path": "research/artifacts/source-notes/opg401-a01-v03-v01-statement-comparison.md",
+      "sha256": "7cecda87533abc74d65751b627400938145681b0bf089c0f3f41b965f96c855c"
+    }
+  ],
+  "semantic_statement": {
+    "colors": "Fin 20 representing Z/20Z",
+    "residue": "r(a,b)=(b.val+20-a.val)%20",
+    "distance": "delta(a,b)=min(r(a,b),20-r(a,b))",
+    "edge": "7<=r(a,b)<=13",
+    "pair": "forall a,b, card {x:EdgeOK(x,a) and EdgeOK(x,b)}=max(0,7-delta(a,b)); nonempty iff delta(a,b)<=6",
+    "graph": "forall finite simple G and pairwise distinct v,u,w with N(v)={u,w}, forall valid psi on G-v, evaluation f->f(v) is a bijection from full colorings preserving psi off v to the two-neighbor common allowed set",
+    "root_implication": "none"
+  },
+  "semantic_statement_sha256": "6d9a246a11994395559e437b69a7a4e0380d4bcf92f0d62ae048fda44e1e3a8a",
+  "registered_principals_requiring_policy_qualification": [
+    {
+      "principal": "lean-kernel",
+      "policy": "lean-kernel-fixture-v1",
+      "capability": "kernel_check"
+    },
+    {
+      "principal": "lean-axiom-auditor",
+      "policy": "lean-axiom-fixture-v1",
+      "capability": "axiom_escape_audit"
+    },
+    {
+      "principal": "lean-faithfulness-reviewer",
+      "policy": "lean-statement-fixture-v1",
+      "capability": "statement_faithfulness"
+    }
+  ],
+  "formal_source_files": [],
+  "formal_declaration": null,
+  "proposed_executor_limits": {
+    "wall_seconds": 120,
+    "memory_bytes": 1073741824,
+    "output_bytes": 1048576,
+    "threads": 1,
+    "retries": 0
+  },
+  "trusted_execution": {
+    "status": "not_invoked",
+    "fingerprint": null,
+    "run": null,
+    "receipts": []
+  },
+  "dispatch_observation": "The sole current workflow has only snapshot, packet and diff checks; no suitable mathematical verifier or closure action is exposed there.",
+  "required_next_actions": [
+    "qualify verifier policies for the exact V01 graph and finite-color statements",
+    "freeze formal source and declaration with toolchain/dependency hashes",
+    "obtain actual kernel, axiom and statement-faithfulness receipts under qualified trust domains",
+    "submit the bound receipts to the trusted obligation closure gate"
+  ],
+  "generator_authority": "candidate request only; no truth-ledger, Evidence, Result or Solution write",
+  "open_obligations": [
+    "obligation:opg401-z20-extension",
+    "obligation:opg401-root"
+  ]
+}

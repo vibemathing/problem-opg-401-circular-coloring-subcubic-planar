@@ -1,0 +1,57 @@
+{
+  "verdict": "candidate_only",
+  "trust_domain": "candidate_generator",
+  "execution": "executed_frontend_bounded",
+  "command": [
+    "python3",
+    "-I",
+    "-S",
+    "audit.py"
+  ],
+  "python": "3.13.5",
+  "implementation": "CPython",
+  "python_binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "limits": {
+    "wall_seconds": 20,
+    "cpu_seconds": 10,
+    "address_space_bytes": 268435456,
+    "file_bytes": 1048576,
+    "stdout_stderr_bytes": 65536,
+    "threads": 1,
+    "retries": 0
+  },
+  "wall_seconds_observed": 0.077879,
+  "exit_status": 0,
+  "timed_out": false,
+  "output_limit_exceeded": false,
+  "stdout": "{\"boundary_masks\": 32, \"reflection_edge_checks\": 2800, \"closure_controls\": 1260, \"fixtures\": 4, \"mutations\": 12, \"closed_residual_classes\": []}\n",
+  "stdout_sha256": "006c0097cb7597e1ec1241243f0d5a716c8a4644f66c0c06f2854a6b43380f49",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_bytes": 0,
+  "files": [
+    {
+      "name": "input.json",
+      "bytes": 340,
+      "sha256": "850d1c0e74c1346caa75a36d31e6e738acf14026fab4683c55f7e0cb27cb743b"
+    },
+    {
+      "name": "audit.py",
+      "bytes": 13394,
+      "sha256": "569d5154904a2c30ce37dacf03681768c44e608d242909d6d05916a6655817c4"
+    },
+    {
+      "name": "run.py",
+      "bytes": 2877,
+      "sha256": "85342f009899e7ea093aef3022d0fc29d0a8e1f9707c9ac16a9749084d4e8d73"
+    },
+    {
+      "name": "certificate.json",
+      "bytes": 17823,
+      "sha256": "34e8fd906218c573e8403c811ad4d356174829a978cb93e904ee1bc920d373f3"
+    }
+  ],
+  "scope": "finite controls only; no arbitrary exterior enumeration",
+  "network_calls_in_child": 0,
+  "trusted_verifier_receipt": false,
+  "lean_smt_invoked": false
+}

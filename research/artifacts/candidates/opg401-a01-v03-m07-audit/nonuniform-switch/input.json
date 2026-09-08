@@ -1,0 +1,1 @@
+{"modulus":20,"allowed_directed_residues":[7,8,9,10,11,12,13],"internal_order":["a","u","b","c","v","d","e","f"],"C1_p":[1,14],"C1_axes":[8,16],"chord":[18,28],"cycle_order":40,"pins":"actual complement of selected component; all separator values retained","scope":"finite controls of proved switching lemmas; no small replacement search"}

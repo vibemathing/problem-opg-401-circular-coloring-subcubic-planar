@@ -1,0 +1,69 @@
+{
+  "verdict": "candidate_only",
+  "trust_domain": "candidate_generator",
+  "execution": "executed_frontend_bounded",
+  "command": [
+    "python3",
+    "-I",
+    "-S",
+    "audit.py"
+  ],
+  "python_version": "3.13.5",
+  "implementation": "CPython",
+  "python_binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "limits": {
+    "wall_seconds": 20,
+    "cpu_seconds": 10,
+    "memory_bytes": 268435456,
+    "file_bytes": 1048576,
+    "threads": 1,
+    "retries": 0
+  },
+  "wall_seconds_observed": 4.036217,
+  "exit_status": 0,
+  "timed_out": false,
+  "stdout_sha256": "1b2796391ccc123de13b68fcea6c8bfba88f0618986dc380b3f5d80a81a8e234",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "{\"direct_DFS_crosschecks\": 4400, \"globally_eliminated_residual_classes\": [], \"m07_local_disagreements\": 0, \"mutations_detected\": 13, \"normalized_states_checked\": 4400, \"replacement_screen_size\": 71}\n",
+  "stderr_bytes": 0,
+  "files": [
+    {
+      "name": "engine.py",
+      "bytes": 5217,
+      "sha256": "2f1d5b142820440bc07e4af6adfd24da8677260e3fe9a5faede0cc681c13a789"
+    },
+    {
+      "name": "audit.py",
+      "bytes": 13557,
+      "sha256": "de365388c71b8c34ddeba9f552f9f2d5499e7ba22e8a5ddb3b28f9baea6c64b2"
+    },
+    {
+      "name": "run.py",
+      "bytes": 2654,
+      "sha256": "d7f791b1a84ca27f0c01e8c971603767310f0c65cd6aa828097dfb3adada2a11"
+    },
+    {
+      "name": "input.json",
+      "bytes": 1215,
+      "sha256": "5e6d549bd2ec5da181de84718c461dd30851f2914ce771e10824433ae49210cf"
+    },
+    {
+      "name": "boundary-table.csv",
+      "bytes": 5079,
+      "sha256": "7ffc93af5bd310e6f3b085756bbdc2284b3211cb98e5a68aba175d2143a9bfdf"
+    },
+    {
+      "name": "audit.json",
+      "bytes": 14864,
+      "sha256": "362bddb4b737aa1541cb10100e89087cb71d14845a4f043d1dd5867445703a37"
+    },
+    {
+      "name": "replacement-screen.json",
+      "bytes": 11236,
+      "sha256": "c2188eca1d7d617eae62196d536e8187e945d15c56e173ce9130bf7bb1949d92"
+    }
+  ],
+  "no_network_in_child": true,
+  "repository_verifier_adapter": "not_invoked",
+  "trusted_verifier_receipt": false
+}
