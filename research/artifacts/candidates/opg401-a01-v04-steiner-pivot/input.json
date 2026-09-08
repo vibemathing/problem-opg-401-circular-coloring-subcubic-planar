@@ -1,0 +1,1 @@
+{"verdict":"candidate_only","palette":20,"lower":7,"upper":13,"fixtures":[{"colors":[1,9,0,9,2,9,0,9],"ports":{"P":0,"Q":6,"R":4,"S":2},"axis":8,"pivot":2,"target":"R"},{"colors":[14,1,11,0,11,2,11,0,11,1],"ports":{"P":0,"Q":7,"R":5,"S":3},"axis":16,"pivot":0,"target":"Q"}]}
