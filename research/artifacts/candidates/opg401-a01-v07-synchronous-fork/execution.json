@@ -1,0 +1,65 @@
+{
+  "verdict": "candidate_only",
+  "trust_domain": "candidate_generator",
+  "command": [
+    "python3",
+    "-I",
+    "-S",
+    "check.py"
+  ],
+  "python_version": "3.13.5",
+  "implementation": "CPython",
+  "binary_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "limits": {
+    "wall_seconds": 30,
+    "cpu_seconds": 20,
+    "memory_bytes": 268435456,
+    "file_bytes": 2097152,
+    "output_bytes_postcheck": 65536,
+    "threads": 1,
+    "retries": 0
+  },
+  "exit_status": 0,
+  "timed_out": false,
+  "oversized_output": false,
+  "elapsed_seconds": 0.523241,
+  "stdout_sha256": "39f3246b928c2fb6a2c967f16be47d201ad49d324bc97244d3a54c1836eb5128",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "{\"pinned_fork_states\": [20, 6], \"unique_good_states\": 2, \"global_no_support_le3_cases\": 2, \"smaller_supports\": 5236, \"axis_failures\": 2060, \"mutations\": 14, \"classes_closed\": []}\n",
+  "stderr_bytes": 0,
+  "files": [
+    {
+      "path": "check.py",
+      "bytes": 15743,
+      "sha256": "d628f1ba90b57be9f4d0c7f2c493484699f88f579e4c230d807ef6bec428c2e7"
+    },
+    {
+      "path": "input.json",
+      "bytes": 563,
+      "sha256": "579ef4532ee7a1005a0247edc2bcad28947fae531304b950f722ad467bfed8c0"
+    },
+    {
+      "path": "run.py",
+      "bytes": 2567,
+      "sha256": "badad466559bed4dcdefff8b4260ca4cbc8c1cc3d8d081d6acbe27d17e46976c"
+    },
+    {
+      "path": "fork-certificate.json",
+      "bytes": 2979,
+      "sha256": "b1ef7e28a31c890063fff9899dfda2bfc957eb4d5e9fd085cddde3254806f3bf"
+    },
+    {
+      "path": "case-p1.json",
+      "bytes": 11334,
+      "sha256": "199c064c4a0196c7bf49dc520aef136d71d66b2505f0471cf679d714572dc4c5"
+    },
+    {
+      "path": "case-p14.json",
+      "bytes": 14657,
+      "sha256": "cb6eac83d7f7fa34447f31f48d4cba00995954d7a521b08edcb9dc9c70151a71"
+    }
+  ],
+  "network_used": false,
+  "trusted_verifier_run": null,
+  "mathematical_scope": "Finite C1 control objects only; general claims have separate proofs."
+}
