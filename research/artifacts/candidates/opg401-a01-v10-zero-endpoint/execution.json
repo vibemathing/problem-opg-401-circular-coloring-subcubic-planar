@@ -1,0 +1,36 @@
+{
+  "verdict": "candidate_only",
+  "trusted_verifier": false,
+  "started_utc": "2026-09-09T07:31:41.052222+00:00",
+  "runtime": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "interpreter_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "command": [
+    "python3",
+    "-I",
+    "-S",
+    "check.py"
+  ],
+  "sources": {
+    "check.py": "bdffc94582a22be75791365905d86f28526d4be897a20c2eb6fa95a28d881306",
+    "input.json": "f967b75133f1cbfd103078cf2f3b7474320c127013660c88249de0d05af348b7",
+    "run.py": "cd049c8c7a0e99d1948d0c419380dd2c64e3215301728efdc32c232f9a838905"
+  },
+  "limits": {
+    "wall_seconds": 30,
+    "cpu_seconds": 20,
+    "address_space_bytes": 268435456,
+    "file_bytes": 2097152,
+    "combined_output_bytes": 65536,
+    "output_check": "after bounded capture",
+    "threads": 1,
+    "retries": 0
+  },
+  "exit_code": 0,
+  "timeout": false,
+  "elapsed_seconds": 0.09041399599982469,
+  "output_budget_ok": true,
+  "stdout_sha256": "f98f8e5ec8ec31289d4d3d4adc3a7665a4d35237b7939ef0caf459b3993b6cd3",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout": "{\"complete_graphs\": 8, \"edge_displacement_cases\": 6860, \"literal_local_states\": 792, \"local_parameter_rows\": 14, \"mutations\": 14}\n",
+  "certificate_sha256": "d08dcd864d0f2a4e4424e13b36e0456ef9a4bd589be76bc612ffb829b0da9951"
+}
