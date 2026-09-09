@@ -1,0 +1,54 @@
+{
+  "command": [
+    "python3",
+    "-I",
+    "-S",
+    "check.py"
+  ],
+  "exit_code": 0,
+  "finished_at": "2026-09-09T05:35:32.999952+00:00",
+  "implementation": "CPython",
+  "input_sha256": {
+    "check.py": "0e46147027004b2e6ea1bb58a36ad2344b1ca093cfa5ed890d561bbb53756a68",
+    "input.json": "5d8ccee330677d548ddd71ee5febb4711552a5586209f3238046d130b329b32f",
+    "proof.md": "a0ed1facb00d193b20a8b112a1ae0887562b719371407b3e1f19fc89f7ccae58",
+    "run.py": "5ea725e9724d0bad159b94059af7c6a6022da75c933375b02a2977f37d092827"
+  },
+  "interpreter_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "limits": {
+    "address_space_bytes": 268435456,
+    "combined_output_bytes": 65536,
+    "cpu_seconds": 20,
+    "file_bytes": 2097152,
+    "output_limit_enforcement": "checked_after_bounded_return",
+    "retries": 0,
+    "threads": 1,
+    "wall_seconds": 30
+  },
+  "observed_counts": {
+    "boundary_pairs_per_p": 6,
+    "cycle_chord_cases": 2,
+    "edge_displacement_controls": 6860,
+    "full_plane_fixtures": 2,
+    "mutations": 16,
+    "terminal_release_cases": 5700,
+    "three_vertex_cases": 147,
+    "two_vertex_all_interval_cases": 5488
+  },
+  "output_budget_pass": true,
+  "output_sha256": {
+    "certificate.json": "0ff06b32ad414ec7fe8012a64be03316a9911318902fe63f30ff118aa87fb625"
+  },
+  "python": "3.13.5",
+  "registered_verifier_invoked": false,
+  "schema": "candidate-execution-v1",
+  "started_at": "2026-09-09T05:35:32.878668+00:00",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 229,
+  "stdout_sha256": "28179b3c16dc24452d87d5fd988b0d6aebfdf1e1ade88b46a3fc706ecd545b54",
+  "timeout": false,
+  "trust_domain": "candidate_generator_frontend",
+  "verdict": "candidate_only",
+  "wall_seconds": 0.121251
+}
