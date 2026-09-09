@@ -43,6 +43,7 @@ def find_o(P,Q,R,S):
               ans=(a,u,b,c,v,d,e,f);_cache[key]=ans;return ans
     _cache[key]=None;return None
 
+# 1. Complete primary hit table, with Y always shifted.
 rows={(r["p"],r["bits"]["X"],r["bits"]["y"],r["bits"]["P"],r["bits"]["S"]):r
       for r in cert["hit_rows"]}
 assert len(rows)==32
@@ -69,6 +70,7 @@ for p in (1,14):
    assert row["witness"] is None
 assert hit_success==23
 
+# 2. Restricted O table used in the hand necessity proof.
 rt={(r["S"],r["Q"],r["R"]):r["P_values"] for r in cert["restricted_O_table"]}
 assert len(rt)==18
 for S in (0,19):
@@ -80,6 +82,8 @@ assert rt[(0,19,1)]==list(range(1,13))
 assert rt[(19,0,1)]==list(range(1,13))
 assert rt[(19,19,1)]==list(range(1,13))
 
+# 3. All 6,942 labeled five-terminal preorders.
+# bit order Y,X,y,P,S.  Only forward-closed sets containing Y are allowed.
 pairs=[(i,j) for i in range(5) for j in range(5) if i!=j]
 seen=set();preorders=0
 for mask in range(1<<20):
@@ -107,6 +111,7 @@ for mask in range(1<<20):
  assert ex1==pred1 and ex14==pred14
 assert preorders==6942
 
+# 4. p=14 bounded-drop no-go under Y<=S<=y, X<=y, P<=y.
 no_go=0
 for dY,dS,dX,dP,dy in product(range(7),repeat=5):
  if not(dY<=dS<=dy and dX<=dy and dP<=dy):continue
@@ -120,19 +125,21 @@ for dY,dS,dX,dP,dy in product(range(7),repeat=5):
  assert not possible
 assert no_go==2730==cert["p14_bounded_drop_assignments_checked"]
 
+# 5. Fixture and combinatorial embedding verification.
 def verify_fixture(F):
  V=set(F["vertices"]);E={tuple(sorted(e)) for e in F["edges"]}
  assert all(a in V and b in V and a!=b for a,b in E)
  adj={v:set() for v in V}
  for a,b in E:adj[a].add(b);adj[b].add(a)
  assert max(map(len,adj.values()))<=3
+ # connected
  q=deque([next(iter(V))]);seenV={q[0]}
  while q:
   u=q.popleft()
   for v in adj[u]:
    if v not in seenV:seenV.add(v);q.append(v)
  assert seenV==V
- assert not any((adj[a]&adj[b]) for a,b in E)
+ assert not any((adj[a]&adj[b]) for a,b in E) # triangle-free
  rot=F["rotation"]
  assert set(rot)==V
  for v in V:assert set(rot[v])==adj[v] and len(rot[v])==len(adj[v])
@@ -158,6 +165,7 @@ def verify_fixture(F):
   for a,b in zip(path,path[1:]):
    assert tuple(sorted((a,b))) in E
    assert (old[b]-old[a])%20==13
+ # actual zero reachability
  Z={v:[] for v in old}
  for a,b in E:
   if a in old and b in old:
@@ -178,9 +186,12 @@ def verify_fixture(F):
 
 for F in cert["fixtures"]:verify_fixture(F)
 
+# 6. p=1 weighted specialization on its fixture.
 F1=next(F for F in cert["fixtures"] if F["p"]==1)
 old=F1["old_exterior_colors"]
 E={tuple(e) for e in F1["edges"]}
+# remove O and Q,R
+Onames=set(inp["O"]["vertices"])
 K=set(old)-{"Q","R"}
 arcs={v:[] for v in K}
 for a,b in E:
@@ -206,6 +217,7 @@ ow=find_o(19,1,19,0)
 for v,c in zip(inp["O"]["vertices"],ow):new[v]=c
 assert all(edge(new[a],new[b]) for a,b in E)
 
+# 7. Mutation controls.
 assert edge(0,7) and edge(0,13)
 assert not edge(0,6) and not edge(0,14)
 assert (13-0)%20==13 and (7-0)%20==7
@@ -218,8 +230,15 @@ assert find_o(14,1,19,0) and not find_o(14,1,19,19)
 assert all((13+13*L)%20==t for L,t in ((12,9),(16,1),(17,14),(19,0)))
 mutations=14
 
-out={"status":"ok","hit_rows":32,"hit_success":hit_success,
- "restricted_O_rows":18,"preorders":preorders,
- "p14_bounded_drop_states":no_go,"fixtures":len(cert["fixtures"]),
- "mutations":mutations,"python":sys.version.split()[0]}
+out={
+ "status":"ok",
+ "hit_rows":32,
+ "hit_success":hit_success,
+ "restricted_O_rows":18,
+ "preorders":preorders,
+ "p14_bounded_drop_states":no_go,
+ "fixtures":len(cert["fixtures"]),
+ "mutations":mutations,
+ "python":sys.version.split()[0]
+}
 print(json.dumps(out,separators=(",",":"),sort_keys=True))
