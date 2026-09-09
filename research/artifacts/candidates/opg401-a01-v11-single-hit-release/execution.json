@@ -1,0 +1,10 @@
+{
+  "verdict": "candidate_only",
+  "runtime": "CPython 3.13.5",
+  "command": "python3 -I -S check.py",
+  "exit_code": 0,
+  "timeout": false,
+  "wall_limit_seconds": 20,
+  "stdout": "{'crossing_cases': 140, 'O_rows': 6, 'path_lengths': {'P1': 16, 'P14': 17, 'S': 19}, 'status': 'ok'}",
+  "scope": "finite control only; not a trusted verifier or root proof"
+}
