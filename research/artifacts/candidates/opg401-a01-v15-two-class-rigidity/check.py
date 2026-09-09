@@ -126,6 +126,7 @@ def mixed_exists(colors,edges):
             return opts
     return None
 
+# A. Two-class global-map rigidity, by two code paths.
 expected_id=tuple(range(20))
 expected_ref=(0,)+tuple(range(19,0,-1))
 pair_rows=[]
@@ -147,10 +148,11 @@ for D in PAIR_SETS:
         "normalized_maps":[list(x) for x in sols],"t7_table":t7})
 assert pair_rows==CERT["pair_rows"]
 
+# B. All terminal option choices admit literal Q/R/O completion.
 unique={}
 option_rows=0
 for p in (1,14):
- for sig in product(range(3),repeat=5):
+ for sig in product(range(3),repeat=5): # X,Y,y,P,S
     X=MAPS[sig[0]][13];Y=MAPS[sig[1]][13]
     y=MAPS[sig[2]][9];P=MAPS[sig[3]][p];S=MAPS[sig[4]][0]
     ans=None
@@ -173,6 +175,7 @@ for (p,X,Y,y,P,S),(q,r,ow) in unique.items():
     assert edge(q,X) and edge(q,y) and edge(r,Y) and edge(r,y)
     assert valid_o((P,q,r,S),ow)
 
+# C. Exact minimal path obstruction and all ordered length-two obstructions.
 bad=[]
 for a,b,c in product(range(20),repeat=3):
     if edge(a,b) and edge(b,c) and mixed_exists([a,b,c],[(0,1),(1,2)]) is None:
@@ -190,6 +193,7 @@ right={i for i in range(3) for j in range(3)
        if edge(MAPS[i][8],MAPS[j][0])}
 assert left=={1,2} and right=={0} and not(left&right)
 
+# D. Mutations and scope controls.
 mut=0
 for m,c,d in [(0,0,9),(0,0,10),(1,0,8),(1,0,10),(2,0,8),(2,0,9)]:
     assert edge(c,(c+d)%20) and not edge(MAPS[m][c],MAPS[m][(c+d)%20]);mut+=1
