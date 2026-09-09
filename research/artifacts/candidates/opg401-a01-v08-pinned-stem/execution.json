@@ -1,0 +1,40 @@
+{
+  "command": [
+    "python3",
+    "-I",
+    "-S",
+    "check.py"
+  ],
+  "elapsed_seconds": 0.302556,
+  "exit_code": 0,
+  "implementation": "CPython",
+  "interpreter_sha256": "17b78e0a93175e86f9ac03141924fd7a7f0c0c52e66b34bfa0de20ffef989df1",
+  "kind": "candidate_frontend_execution",
+  "limits": {
+    "address_space_bytes": 268435456,
+    "captured_output_bytes": 65536,
+    "cpu_seconds": 20,
+    "file_bytes": 2097152,
+    "retries": 0,
+    "threads": 1,
+    "wall_seconds": 30
+  },
+  "outputs_sha256": {
+    "certificate.json": "cc85ead48093b3d13f02b1fb5c5d8e38b481285892a76738612bb3e489232bcc"
+  },
+  "python_version": "3.13.5",
+  "recorded_at_utc": "2026-09-09T03:35:17.410990+00:00",
+  "scope": "Same candidate-generator trust domain; no registered verifier or admission.",
+  "sources_sha256": {
+    "check.py": "9e068cb418ae2e90c52a8c43224aec2dae2e2ce42585519cfbfe559b993cc1b3",
+    "input.json": "af0340106ef72cec61bdafc262d45676e16f5cd4dafd36a7943fbab60b0f0891",
+    "proof.md": "0d38bdef7f3a616af57d9b72fa787efeb70e9ed26948d3d7946e2a9c3d937e0c",
+    "run.py": "fcc465849bcaffa7586b4f79cc3810f7573947993df60ca3439e840719038d4a"
+  },
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_utf8": "",
+  "stdout_sha256": "430c3a6f0453b6da6d9a5060376af9b141f29edbb14e9be1a9999306e6806848",
+  "stdout_utf8": "{\"brute_tail_nodes\": 1939, \"complete_plane_fixtures\": 4, \"mutations\": 14, \"parameter_rows\": 126}\n",
+  "timeout": false,
+  "verdict": "candidate_only"
+}
