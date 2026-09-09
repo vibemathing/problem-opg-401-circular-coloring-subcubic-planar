@@ -155,6 +155,7 @@ assert sorted(map(len,faces))==[5,5]
 L=set(A[0])
 assert L==set(range(7,14))
 assert not any(edge(a,b) for a in L for b in L)
+# Selecting z too creates same parity on edge z-v3.
 assert colors["z"]%2==colors["v3"]%2
 
 # 6. Mutation and boundary controls.
