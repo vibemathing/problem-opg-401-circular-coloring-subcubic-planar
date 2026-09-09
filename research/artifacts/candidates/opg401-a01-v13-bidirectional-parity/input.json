@@ -1,0 +1,1 @@
+{"C1":[[1,0,2,0],[14,0,2,0]],"O":{"edges":[["a","u"],["u","b"],["b","c"],["c","v"],["v","a"],["c","d"],["d","e"],["e","f"],["f","b"]],"ports":[["a","P"],["d","Q"],["e","R"],["f","S"]],"vertices":["a","u","b","c","v","d","e","f"]},"base_revision":"e1e019398fe2fbacd847746218ddd4ca7513b896","schema":"opg401-v13-input-v1","terminal_order":["Y","X","y","P","S"]}
