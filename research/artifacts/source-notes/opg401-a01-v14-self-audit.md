@@ -1,0 +1,1 @@
+Self-audit: the branch is add-only under candidate/source-note/inbox paths. The universal graph claim follows by applying a verified finite palette map to each actual edge; the checker only audits the finite map and explicit O witnesses. The structural conclusion is necessary-only. `best_verified_result=none`.
