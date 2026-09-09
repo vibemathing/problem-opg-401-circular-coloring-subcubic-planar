@@ -1,0 +1,1 @@
+Transport note: reuse the existing unique branch and one V14 packet. No duplicate packet or issue was created. PR number and final-head checks must be bound before merge; this note is coordination only, not Evidence.
