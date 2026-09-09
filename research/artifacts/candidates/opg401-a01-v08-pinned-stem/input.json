@@ -1,0 +1,1 @@
+{"schema":"opg401-v08-input-v1","lengths":[0,1,2,3,4,8,16,64,128],"terminal_offsets":[0,1,2,3,4,5,6],"C1_p":[1,14],"maximum_brute_tail_length":3,"fixture_tail_length":1,"scope":"Exact fixed-complement response, not an exterior census"}
