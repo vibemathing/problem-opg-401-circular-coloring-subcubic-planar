@@ -1,0 +1,12 @@
+{
+  "python": "3.13.5",
+  "command": "python3 -I -S clean-check.py",
+  "exit_code": 0,
+  "stdout_sha256": "ef9175e4867195b98f89b01a2683d59e97e8337698270741aa105f8ce440bcb9",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 1105,
+  "stderr_bytes": 0,
+  "counts": {"unsat_paths": 30, "rigid_stars": 21, "C4_pins": 27, "C5_pins": 180, "C5_no_one_or_unit": 18},
+  "limits": {"wall_seconds": 30, "memory_mib": 256, "output_kib": 64},
+  "trust": "candidate-generator cross-check; not an independent verifier"
+}
